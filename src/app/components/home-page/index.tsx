@@ -9,6 +9,7 @@ import {
   HomeScroll,
   HomeImg,
 } from "./styled";
+
 import {
   ArrowDownIcon,
   DownLoadIcon,
@@ -25,7 +26,6 @@ export const HomePage = () => {
     <HomeSection className="home section">
       <HomeContainer className="home__container container grid">
         <HomeContent className="home__content grid">
-          
           {/* Social Links */}
           <HomeSocial className="home__social">
             <Link
@@ -40,8 +40,8 @@ export const HomePage = () => {
           </HomeSocial>
 
           {/* Home Img  - ver min: 28:07 blob.svg*/}
-          <HomeImg className="home__img">
-            <Image src={ImagePng} alt="My Picture" className="home__blob-img"/>
+          <HomeImg className="home__img home__blob">
+            <Image src={ImagePng} alt="My Picture" className="home__blob-img" />
           </HomeImg>
 
           {/* Home Data -  29:20*/}
@@ -52,9 +52,8 @@ export const HomePage = () => {
             </LargeText>
             <BodyText className="home__description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus temporibus sequi repellat fugiat molestiae. Dolorum et
-              necessitatibus est dicta aut impedit sapiente, commodi quam iusto
-              corrupti. Consequuntur quaerat dolorum incidunt!
+              Repellendus adipisicing elit,Repellendus adipisicing elit.
+              Repellendus Patronus.
             </BodyText>
             <Link
               href="https://drive.google.com/file/d/15dbbPCV_ktIP3yFQdMP2Mpgh3EconX91/view?usp=sharing"
@@ -66,18 +65,17 @@ export const HomePage = () => {
               <DownLoadIcon />
             </Link>
           </HomeData>
-
-          {/* Home Scroll -  30:38*/}
-          <HomeScroll className="home__scroll">
-            <Link href="#about" className="home__scroll-button button-flex">
-              <MouseIcon className="home__scroll-mouse" />
-              <span className="home__scroll-name">Scroll down</span>
-              <ArrowDownIcon className="home__scroll-arrow" />
-            </Link>
-          </HomeScroll>
-
-          
         </HomeContent>
+        {/* Home Scroll -  30:38*/}
+        <HomeScroll className="home__scroll">
+          <Link href="#about" className="home__scroll-button button-flex">
+            <MouseIcon className="home__scroll-mouse" />
+            <span className="home__scroll-name">Scroll down</span>
+            <ArrowDownIcon className="home__scroll-arrow" />
+          </Link>
+        </HomeScroll>
+
+
       </HomeContainer>
     </HomeSection>
   );

@@ -3,17 +3,25 @@ import styled from "styled-components";
 export const HomeSection = styled.section``;
 
 export const HomeContainer = styled.div`
-  gap: 1rem;
+  gap: 3rem;
+
+  @media (min-width: 769px) {
+    row-gap: 5rem;
+  }
 `;
 
 export const HomeContent = styled.div`
-  grid-template-columns: 0.5fr 3fr;
-  padding-top: 1rem;
+  grid-template-columns: 0.25fr 3fr;
   align-items: center;
+
+  @media (min-width: 568px) {
+    padding-top: 1.5rem;
+    grid-template-columns: max-content 1fr 1fr;
+  }
 
   @media (min-width: 769px) {
     padding-top: 3.5rem;
-    grid-template-columns: max-content 1fr 1fr;
+    column-gap: 2rem;
   }
 `;
 
@@ -30,27 +38,26 @@ export const HomeSocial = styled.div`
     stroke: var(--first-color-alt);
   }
 
-  @media(min-width: 769px){
-    margin-right: 8rem;
+  @media (min-width: 1024px) {
+    margin-right: 10rem;
   }
 `;
 
-// // Home__blob
-// width: 180px;
-// fill: var(--first-color);
-
-// // Home__blobl-img -> agrego x=12 y=18 en la etiqueta image
-// width: 170px;
-
 export const HomeImg = styled.div`
-  .home__blob {
-    width: 200px;
-    fill: var(--first-color);
+
+  @media (min-width: 568px) {
+    order: 1;
+    justify-self: center;
   }
 
   @media (min-width: 769px) {
-    order: 1;
-    justify-self: center;
+    width: 270px;
+    height: 270px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 320px;
+    height: 320px;
   }
 
   .home__blob-img {
@@ -59,7 +66,6 @@ export const HomeImg = styled.div`
     border-radius: 50%;
     border: 6px solid var(--first-color);
     object-fit: cover;
-    /* box-shadow: 2px 2px 2px 1px var(--first-color); */
   }
 
   @media (min-width: 769px) {
@@ -72,10 +78,6 @@ export const HomeImg = styled.div`
 
 export const HomeData = styled.div`
   grid-column: 1/3;
-
-  h1 {
-    font-size: var(--big-font-size);
-  }
 
   h3 {
     font-size: var(--h3-font-size);
@@ -109,6 +111,9 @@ export const HomeData = styled.div`
   .button:hover {
     background-color: var(--first-color-alt);
   }
+  @media (min-width: 568px) {
+    grid-column: initial;
+  }
 
   @media (min-width: 769px) {
     grid-column: initial;
@@ -117,8 +122,6 @@ export const HomeData = styled.div`
 
 export const HomeScroll = styled.div`
   display: none;
-
-  width: 300px;
 
   a {
     color: var(--first-color);
@@ -132,11 +135,23 @@ export const HomeScroll = styled.div`
   }
 
   .home__scroll-name {
-    font-size: var(--small-font-size);
+    /* font-size: var(--small-font-size); */
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
   }
-`;
 
-// 36:14
+  @media (min-width: 769px) {
+    display: block;
+
+    .home__scroll-button {
+      margin-left: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .home__scroll-button {
+      margin-left: 13rem;
+    }
+  }
+`;

@@ -10,7 +10,6 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Navbar = styled.nav`
-  padding: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +27,13 @@ export const Navbar = styled.nav`
   }
 `;
 
-export const NavMenu = styled.div``;
+export const NavMenu = styled.div`
+  padding: 2rem 0.25rem 4rem;
+
+  @media (min-width: 769px) {
+    margin-left: auto;
+  }
+`;
 
 export const NavList = styled.ul`
   display: none;
@@ -36,6 +41,7 @@ export const NavList = styled.ul`
   @media (min-width: 769px) {
     display: flex;
     flex-direction: row;
+    column-gap: 2rem;
   }
 `;
 
