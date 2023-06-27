@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-// import { TertiaryButton } from "ui/buttons";
-// import { User, Search, Logout } from "ui/icons";
-// import { BodyTextBold } from "ui/text";
+
 import {
   MenuContainer,
   DropdownMenu,
@@ -13,7 +11,7 @@ import {
 import { BurguerButton } from "@/app/ui/buttons";
 import { ContactIcon, HomeIcon, ProjetsIcon, TechIcon } from "@/app/ui/icons";
 
-export function Menu({ router, token, logOut, userData }: any) {
+export function Menu() {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {

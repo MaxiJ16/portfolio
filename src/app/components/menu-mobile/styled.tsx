@@ -40,19 +40,6 @@ export const DropdownMenu = styled.div`
     transform: rotate(45deg);
   }
 
-  /* .greeting {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    color: var(--black);
-    width: 100%;
-    text-align: center;
-    font-size: 17px;
-    padding: 15px 0;
-    font-weight: 500;
-    line-height: 1.2rem;
-  } */
-
   &.active {
     opacity: 1;
     visibility: visible;
@@ -67,6 +54,7 @@ export const DropdownMenu = styled.div`
     transition: 500ms ease;
   }
 `;
+
 export const NavList = styled.ul`
   padding: 0;
   margin: 0 auto;

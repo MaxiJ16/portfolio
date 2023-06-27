@@ -3,33 +3,32 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   width: 100%;
   border-top: 3px solid var(--first-color);
-
-  @media (min-width: 769px) {
-    padding: 10px 20px;
-  }
 `;
 
 export const Navbar = styled.nav`
+  padding: 1rem 1.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  @media (min-width: 769px) {
-    padding: 0.4rem 3rem;
+  .nameNavbar {
+    font-size: 24px;
   }
 
-  h2:hover {
+  p:hover {
     color: var(--first-color);
   }
 
-  .nameNavbar {
-    font-size: 30px;
+  @media (min-width: 769px) {
+    padding: 2rem 3.25rem 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2rem 6.25rem 4rem;
   }
 `;
 
 export const NavMenu = styled.div`
-  padding: 2rem 0.25rem 4rem;
-
   @media (min-width: 769px) {
     margin-left: auto;
   }

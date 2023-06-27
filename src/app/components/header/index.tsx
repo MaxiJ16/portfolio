@@ -1,33 +1,46 @@
 "use client";
 
 import Link from "next/link";
-import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 import { Menu } from "../menu-mobile";
-import { SubTitle } from "@/app/ui/typography";
-import { ContactIcon, HomeIcon, ProjetsIcon, TechIcon } from "@/app/ui/icons";
+import { BodyText } from "@/app/ui/typography";
+import { MoonIcon } from "@/app/ui/icons";
+import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Navbar className="container">
+      <Navbar className="">
         <Link href="#">
-          <SubTitle className="nameNavbar">Maxi</SubTitle>
+          <BodyText>Maxi</BodyText>
         </Link>
 
         {/* Desktop Menu */}
         <NavMenu>
           <NavList className="grid">
             <NavItem>
-              <Link href={"#home"}>Sobre Mi</Link>
+              <Link href={"#home"}>
+                <BodyText>Sobre Mi</BodyText>
+              </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#project"}>Proyectos</Link>
+              <Link href={"#project"}>
+                <BodyText>Proyectos</BodyText>
+              </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#tecnologies"}>Tecnologías</Link>
+              <Link href={"#tecnologies"}>
+                <BodyText>Tecnologías</BodyText>
+              </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#contact"}>Contacto</Link>
+              <Link href={"#contact"}>
+                <BodyText>Contacto</BodyText>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href={""}>
+                <MoonIcon />
+              </Link>
             </NavItem>
           </NavList>
         </NavMenu>
