@@ -25,6 +25,7 @@ export const LargeText = styled(Title).attrs({ as: "h3" })`
 
 export const MediumText = styled(Title).attrs({ as: "h4" })`
   font-size: 24px;
+  font-weight: 500;
   color: ${(props) => props.color};
 `;
 

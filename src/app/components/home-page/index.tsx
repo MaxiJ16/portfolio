@@ -38,10 +38,16 @@ export const HomePage = () => {
               <GithbubIcon />
             </Link>
           </HomeSocial>
-
+          
           {/* Home Img  - ver min: 28:07 blob.svg*/}
           <HomeImg className="home__img home__blob">
-            <Image src={ImagePng} alt="My Picture" className="home__blob-img" />
+            <Image
+              src={ImagePng}
+              alt="My Picture"
+              width={200}
+              height={200}
+              className="home__blob-img"
+            />
           </HomeImg>
 
           {/* Home Data -  29:20*/}
@@ -51,9 +57,11 @@ export const HomePage = () => {
               FullStack Developer
             </LargeText>
             <BodyText className="home__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus adipisicing elit,Repellendus adipisicing elit.
-              Repellendus Patronus.
+              Soy un desarrollador web full stack con experiencia en la creación
+              de web apps utilizando tecnologías como React, Next.js,
+              JavaScript, Node.js y PostgreSQL. He trabajado en proyectos tanto
+              front-end como back-end, desarrollando sitios web interactivos y
+              funcionales.
             </BodyText>
             <Link
               href="https://drive.google.com/file/d/15dbbPCV_ktIP3yFQdMP2Mpgh3EconX91/view?usp=sharing"
@@ -74,8 +82,6 @@ export const HomePage = () => {
             <ArrowDownIcon className="home__scroll-arrow" />
           </Link>
         </HomeScroll>
-
-
       </HomeContainer>
     </HomeSection>
   );
