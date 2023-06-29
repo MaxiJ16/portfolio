@@ -22,8 +22,8 @@ export const MenuTrigger = styled.div`
 
 export const DropdownMenu = styled.div`
   position: fixed;
-  top: 80px;
-  right: 30px;
+  top: 100px;
+  right: 20px;
   background-color: var(--body-color);
   border-radius: 0rem 0rem 1.5rem 1.5rem; // CHEQUEAR
   padding: 10px;

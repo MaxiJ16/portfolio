@@ -101,6 +101,12 @@ img {
 
 /* Reusable css clases */
 
+@media (min-width: 1024px) {
+  .section {
+    padding: 1rem 0 2rem;
+  }
+}
+
 .section__title {
   font-size: var(--h1-font-size);
 }
@@ -123,20 +129,16 @@ img {
 
 /* Layout */
 
-
+.container {
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+}
 
 @media (min-width: 769px) {
   .container {
     margin-left: auto;
     margin-right: auto;
-    padding: 0.4rem 3.25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-
-    padding: 0.4rem 6.25rem;
+    padding: 0.4rem 4.3rem;
   }
 }
 

@@ -2,15 +2,17 @@
 
 import Link from "next/link";
 import { Menu } from "../menu-mobile";
-import { BodyText, MediumText } from "@/app/ui/typography";
+import { BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Navbar>
-        <Link href="#"><MediumText>Maxi</MediumText></Link>
+      <Navbar className="">
+        <Link href="#">
+          <BodyText>Maxi</BodyText>
+        </Link>
 
         {/* Desktop Menu */}
         <NavMenu>
@@ -37,7 +39,7 @@ export const Header = () => {
             </NavItem>
             <NavItem>
               <Link href={""}>
-                <MoonIcon className={"moon"}/>
+                <MoonIcon />
               </Link>
             </NavItem>
           </NavList>

@@ -23,10 +23,6 @@ export const HomeContent = styled.div`
     padding-top: 3.5rem;
     column-gap: 2rem;
   }
-
-  @media (min-width: 1024px) {
-    padding: 3.5rem 6.5rem 0;
-  }
 `;
 
 export const HomeSocial = styled.div`
@@ -43,17 +39,25 @@ export const HomeSocial = styled.div`
   }
 
   @media (min-width: 1024px) {
-    transform: translateX(-6rem);
+    margin-right: 10rem;
   }
 `;
 
 export const HomeImg = styled.div`
-  width: 270px;
-  height: 270px;
 
   @media (min-width: 568px) {
     order: 1;
     justify-self: center;
+  }
+
+  @media (min-width: 769px) {
+    width: 270px;
+    height: 270px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 320px;
+    height: 320px;
   }
 
   .home__blob-img {
@@ -65,16 +69,9 @@ export const HomeImg = styled.div`
   }
 
   @media (min-width: 769px) {
-  }
-
-  @media (min-width: 1024px) {
-    width: 320px;
-    height: 320px;
-
     .home__blob-img {
       width: 300px;
       height: 300px;
-      object-fit: cover;
     }
   }
 `;
@@ -91,15 +88,6 @@ export const HomeData = styled.div`
 
   .home__description {
     margin-bottom: var(--mb-2);
-    font-size: var(--normal-font-size);
-    color: var(--text-color-light);
-  }
-
-  @media (min-width: 1024px) {
-    .home__description {
-      font-size: 18px;
-      padding: 0 1rem 0 0;
-    }
   }
 
   .button {
@@ -123,15 +111,12 @@ export const HomeData = styled.div`
   .button:hover {
     background-color: var(--first-color-alt);
   }
-
   @media (min-width: 568px) {
     grid-column: initial;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
     grid-column: initial;
-    max-width: 500px;
-    margin: 0 auto;
   }
 `;
 
@@ -156,13 +141,17 @@ export const HomeScroll = styled.div`
     margin-right: var(--mb-0-25);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
     display: block;
-    padding: 0 9.2rem;
+
+    .home__scroll-button {
+      margin-left: 3rem;
+    }
   }
 
-  @media (min-width: 1600px) {
-    display: block;
-    padding: 0 14rem;
+  @media (min-width: 1024px) {
+    .home__scroll-button {
+      margin-left: 13rem;
+    }
   }
 `;

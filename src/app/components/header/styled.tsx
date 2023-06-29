@@ -6,21 +6,25 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Navbar = styled.nav`
-  padding: 1rem 2.3rem 2.3rem;
+  padding: 1rem 1.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .nameNavbar {
+    font-size: 24px;
+  }
 
   p:hover {
     color: var(--first-color);
   }
 
   @media (min-width: 769px) {
-    padding: 2rem 3.25rem;
+    padding: 2rem 3.25rem 4rem;
   }
 
   @media (min-width: 1024px) {
-    padding: 2rem 10rem 4rem;
+    padding: 2rem 6.25rem 4rem;
   }
 `;
 
@@ -40,8 +44,4 @@ export const NavList = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
-  .moon:hover {
-    stroke: var(--first-color);
-  }
-`;
+export const NavItem = styled.li``;
