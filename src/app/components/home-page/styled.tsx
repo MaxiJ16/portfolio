@@ -8,6 +8,10 @@ export const HomeContainer = styled.div`
   @media (min-width: 769px) {
     row-gap: 5rem;
   }
+
+  @media (min-width: 1200px) {
+    row-gap: 3rem;
+  }
 `;
 
 export const HomeContent = styled.div`
@@ -22,6 +26,18 @@ export const HomeContent = styled.div`
   @media (min-width: 769px) {
     padding-top: 3.5rem;
     column-gap: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2.5rem 4rem 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 2rem 12rem 4rem;
+  }
+
+  @media (min-width: 1500px) {
+    padding: 6rem 16rem;
   }
 `;
 
@@ -39,12 +55,11 @@ export const HomeSocial = styled.div`
   }
 
   @media (min-width: 1024px) {
-    margin-right: 10rem;
+    transform: translateX(-4rem);
   }
 `;
 
 export const HomeImg = styled.div`
-
   @media (min-width: 568px) {
     order: 1;
     justify-self: center;
@@ -60,7 +75,7 @@ export const HomeImg = styled.div`
     height: 320px;
   }
 
-  .home__blob-img {
+  img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -69,9 +84,9 @@ export const HomeImg = styled.div`
   }
 
   @media (min-width: 769px) {
-    .home__blob-img {
-      width: 300px;
-      height: 300px;
+    img {
+      width: 270px;
+      height: 270px;
     }
   }
 `;
@@ -86,11 +101,12 @@ export const HomeData = styled.div`
     margin-bottom: var(--mb-0-75);
   }
 
-  .home__description {
+  p {
     margin-bottom: var(--mb-2);
+    color: var(--text-color-light);
   }
 
-  .button {
+  a {
     display: flex;
     align-items: center;
     width: fit-content;
@@ -108,9 +124,10 @@ export const HomeData = styled.div`
     }
   }
 
-  .button:hover {
+  a:hover {
     background-color: var(--first-color-alt);
   }
+
   @media (min-width: 568px) {
     grid-column: initial;
   }
@@ -120,8 +137,10 @@ export const HomeData = styled.div`
   }
 `;
 
-export const HomeScroll = styled.div`
+export const ScrollButton = styled.button`
   display: none;
+  border: none;
+  background-color: transparent;
 
   a {
     color: var(--first-color);
@@ -134,8 +153,7 @@ export const HomeScroll = styled.div`
     transform: translateY(0.25rem);
   }
 
-  .home__scroll-name {
-    /* font-size: var(--small-font-size); */
+  p {
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
@@ -143,15 +161,18 @@ export const HomeScroll = styled.div`
 
   @media (min-width: 769px) {
     display: block;
-
-    .home__scroll-button {
-      margin-left: 3rem;
-    }
+    margin-left: 3rem;
   }
 
   @media (min-width: 1024px) {
-    .home__scroll-button {
-      margin-left: 13rem;
-    }
+    margin-left: 7rem;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 15rem;
+  }
+
+  @media (min-width: 1500px) {
+    margin-left: 19rem;
   }
 `;

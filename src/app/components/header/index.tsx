@@ -9,7 +9,7 @@ import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Navbar className="">
+      <Navbar>
         <Link href="#">
           <BodyText>Maxi</BodyText>
         </Link>

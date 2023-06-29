@@ -1,13 +1,6 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-
-import {
-  MenuContainer,
-  DropdownMenu,
-  MenuTrigger,
-  NavList,
-  DropdownItem,
-} from "./styled";
+import { MenuContainer, DropdownMenu, MenuTrigger, NavList, DropdownItem } from "./styled";
 import { BurguerButton } from "@/app/ui/buttons";
 import { ContactIcon, HomeIcon, ProjetsIcon, TechIcon } from "@/app/ui/icons";
 
@@ -41,7 +34,6 @@ export function Menu() {
       </MenuTrigger>
 
       <DropdownMenu className={open ? "active" : "inactive"}>
-        {/* <p className="greeting">Bienvenido</p> */}
         <NavList>
           <DropdownItem onClick={handleClick}>
             <HomeIcon />

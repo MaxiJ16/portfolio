@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-// h1,h2,h3,h4 color title color font weight font semi bold
-
 export const Title = styled.h1`
-  font-size: 32px;
+  font-size: var(--h1-font-size);
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 
@@ -13,8 +11,8 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled(Title).attrs({ as: "h2" })`
-  font-size: 32px;
-  font-weight: var(--font-medium);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
   color: ${(props) => props.color};
 `;
 
@@ -23,12 +21,7 @@ export const LargeText = styled(Title).attrs({ as: "h3" })`
   color: ${(props) => props.color};
 `;
 
-export const MediumText = styled(Title).attrs({ as: "h4" })`
-  font-size: 24px;
-  color: ${(props) => props.color};
-`;
-
 export const BodyText = styled.p`
-  font-size: 18px;
+  font-size: var(--normal-font-size);
   color: var(--title-color);
 `;

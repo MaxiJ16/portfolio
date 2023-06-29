@@ -101,12 +101,6 @@ img {
 
 /* Reusable css clases */
 
-@media (min-width: 1024px) {
-  .section {
-    padding: 1rem 0 2rem;
-  }
-}
-
 .section__title {
   font-size: var(--h1-font-size);
 }
@@ -128,10 +122,19 @@ img {
 }
 
 /* Layout */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
 
 .container {
-  margin-left: var(--mb-1);
-  margin-right: var(--mb-1);
+  padding: 0 1rem;
+}
+
+@media (min-width: 350px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 @media (min-width: 769px) {
@@ -142,7 +145,3 @@ img {
   }
 }
 
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}

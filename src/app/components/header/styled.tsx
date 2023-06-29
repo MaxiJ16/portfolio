@@ -11,12 +11,13 @@ export const Navbar = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  .nameNavbar {
-    font-size: 24px;
-  }
-
+  svg:hover,
   p:hover {
     color: var(--first-color);
+  }
+
+  @media (min-width: 350px) {
+    padding: 1rem 2rem 2rem;
   }
 
   @media (min-width: 769px) {
@@ -24,7 +25,14 @@ export const Navbar = styled.nav`
   }
 
   @media (min-width: 1024px) {
-    padding: 2rem 6.25rem 4rem;
+    padding: 2rem 4.5rem 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 2rem 12rem 4rem;
+  }
+  @media (min-width: 1500px) {
+    padding: 2rem 16rem 4rem;
   }
 `;
 
