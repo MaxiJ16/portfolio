@@ -13,15 +13,17 @@ export const Title = styled.h1`
 export const SubTitle = styled(Title).attrs({ as: "h2" })`
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  color: ${(props) => props.color};
 `;
 
 export const LargeText = styled(Title).attrs({ as: "h3" })`
   font-size: 28px;
-  color: ${(props) => props.color};
 `;
 
 export const BodyText = styled.p`
   font-size: var(--normal-font-size);
   color: var(--title-color);
+`;
+
+export const TinyText = styled.span`
+  font-size: var(--small-font-size);
 `;

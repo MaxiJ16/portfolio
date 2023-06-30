@@ -1,11 +1,13 @@
 "use client";
 
 import { HomePage } from "./components/home-page";
+import { SkillsPage } from "./components/skills-page";
 
 export default function Home() {
   return (
-    <main className="main">
-      <HomePage/>
-    </main>
+    <>
+      <HomePage />
+      <SkillsPage />
+    </>
   );
 }
