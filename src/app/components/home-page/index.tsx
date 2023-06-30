@@ -19,16 +19,19 @@ import {
   GithbubIcon,
   LinkedinIcon,
   MouseIcon,
+  Me,
 } from "@/app/ui/icons";
 
 export const HomePage = () => {
   return (
     <HomeSection>
       <HomeContainer className="container grid">
-
         <HomeContent className="grid">
           <HomeSocial>
-            <Link href={"https://www.linkedin.com/in/maximiliano-jofre/"} target="_blank">
+            <Link
+              href={"https://www.linkedin.com/in/maximiliano-jofre/"}
+              target="_blank"
+            >
               <LinkedinIcon />
             </Link>
 
@@ -38,7 +41,7 @@ export const HomePage = () => {
           </HomeSocial>
 
           <HomeImg>
-            <Image src={ImagePng} alt="My Picture" />
+            <Me />
           </HomeImg>
 
           <HomeData>
@@ -50,8 +53,10 @@ export const HomePage = () => {
               Repellendus Patronus.
             </BodyText>
             <Link
+              // download=""
               href="https://drive.google.com/file/d/15dbbPCV_ktIP3yFQdMP2Mpgh3EconX91/view?usp=sharing"
-              target="_blank" >
+              target="_blank"
+            >
               Descargar CV
               <DownLoadIcon />
             </Link>
@@ -65,7 +70,6 @@ export const HomePage = () => {
             <ArrowDownIcon />
           </Link>
         </ScrollButton>
-
       </HomeContainer>
     </HomeSection>
   );
