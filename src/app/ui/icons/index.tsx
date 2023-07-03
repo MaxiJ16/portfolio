@@ -101,8 +101,8 @@ export const FirebaseIcon = styled(FirebaseSvg)``;
 
 import SequelizeSvg from "./sequelize.svg";
 export const SequelizeIcon = styled(SequelizeSvg)`
-width:25px;
-height: 25px;
+  width: 25px;
+  height: 25px;
 `;
 
 import AlgoliaSvg from "./algolia.svg";

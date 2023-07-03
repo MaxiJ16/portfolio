@@ -106,6 +106,7 @@ section {
 
 .section__title {
   font-size: var(--h1-font-size);
+  text-align: center;
 }
 
 .section__subtitle {

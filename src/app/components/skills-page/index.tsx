@@ -171,54 +171,54 @@ export const SkillsPage = () => {
               </div>
             </div>
           </div>
+        </SkillsContent>
 
-          <SkillsContent>
-            <LargeText className="skills__title">Others</LargeText>
+        <SkillsContent>
+          <LargeText className="skills__title">Others</LargeText>
 
-            <div className="skills__box">
-              <div className="skills__group">
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <GitIcon />
-                  <h3 className="skills__name">Git</h3>
-                </div>
+          <div className="skills__box">
+            <div className="skills__group">
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <GitIcon />
+                <h3 className="skills__name">Git</h3>
+              </div>
 
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <GithbubIcon />
-                  <h3 className="skills__name">Github</h3>
-                </div>
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <GithbubIcon />
+                <h3 className="skills__name">Github</h3>
+              </div>
 
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <PostmanIcon />
-                  <h3 className="skills__name">Postman</h3>
-                </div>
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <PostmanIcon />
+                <h3 className="skills__name">Postman</h3>
+              </div>
 
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <YarnIcon />
-                  <h3 className="skills__name">Yarn</h3>
-                </div>
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <YarnIcon />
+                <h3 className="skills__name">Yarn</h3>
+              </div>
 
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <VercelIcon />
-                  <h3 className="skills__name">Vercel</h3>
-                </div>
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <NpmIcon />
-                  <h3 className="skills__name">Npm</h3>
-                </div>
-                <div className="skills__data">
-                  {/* LOGO SKILL*/}
-                  <TrelloIcon />
-                  <h3 className="skills__name">Trello</h3>
-                </div>
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <VercelIcon />
+                <h3 className="skills__name">Vercel</h3>
+              </div>
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <NpmIcon />
+                <h3 className="skills__name">Npm</h3>
+              </div>
+              <div className="skills__data">
+                {/* LOGO SKILL*/}
+                <TrelloIcon />
+                <h3 className="skills__name">Trello</h3>
               </div>
             </div>
-          </SkillsContent>
+          </div>
         </SkillsContent>
       </SkillsContainer>
     </SkillSection>
