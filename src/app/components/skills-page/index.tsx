@@ -1,6 +1,36 @@
 import { LargeText, SubTitle, TinyText } from "@/app/ui/typography";
 import { SkillSection, SkillsContainer, SkillsContent } from "./style";
-import { CssIcon, HtmlIcon, JsIcon, MapboxIcon, NextIcon, ReactIcon, RecoilIcon, ReduxIcon, StyledCompIcon, SwrIcon, TailwindIcon, TsIcon } from "@/app/ui/icons";
+import {
+  AirtableIcon,
+  AlgoliaIcon,
+  CloudinaryIcon,
+  CssIcon,
+  ExpressIcon,
+  FirebaseIcon,
+  GitIcon,
+  GithbubIcon,
+  HtmlIcon,
+  JsIcon,
+  JwtIcon,
+  MapboxIcon,
+  NextIcon,
+  NodeIcon,
+  NpmIcon,
+  PostgreIcon,
+  PostmanIcon,
+  ReactIcon,
+  RecoilIcon,
+  ReduxIcon,
+  SendgridIcon,
+  SequelizeIcon,
+  StyledCompIcon,
+  SwrIcon,
+  TailwindIcon,
+  TrelloIcon,
+  TsIcon,
+  VercelIcon,
+  YarnIcon,
+} from "@/app/ui/icons";
 
 export const SkillsPage = () => {
   return (
@@ -69,12 +99,12 @@ export const SkillsPage = () => {
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-               <SwrIcon/>
+                <SwrIcon />
                 <h3 className="skills__name">Swr</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-                <MapboxIcon/>
+                <MapboxIcon />
                 <h3 className="skills__name">Mapbox</h3>
               </div>
             </div>
@@ -88,55 +118,55 @@ export const SkillsPage = () => {
             <div className="skills__group">
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <NodeIcon />
                 <h3 className="skills__name">Node.Js</h3>
               </div>
 
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <PostgreIcon />
                 <h3 className="skills__name">PostgreSQL</h3>
               </div>
 
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <ExpressIcon />
                 <h3 className="skills__name">Express</h3>
               </div>
 
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <FirebaseIcon />
                 <h3 className="skills__name">Firebase</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <SequelizeIcon />
                 <h3 className="skills__name">Sequelize</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <AlgoliaIcon />
                 <h3 className="skills__name">Algolia</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <CloudinaryIcon />
                 <h3 className="skills__name">Cloudinary</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <JwtIcon />
                 <h3 className="skills__name">JWT</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <AirtableIcon />
                 <h3 className="skills__name">Airtable</h3>
               </div>
               <div className="skills__data">
                 {/* LOGO SKILL*/}
-
+                <SendgridIcon />
                 <h3 className="skills__name">Sendgrid</h3>
               </div>
             </div>
@@ -149,35 +179,41 @@ export const SkillsPage = () => {
               <div className="skills__group">
                 <div className="skills__data">
                   {/* LOGO SKILL*/}
-
+                  <GitIcon />
                   <h3 className="skills__name">Git</h3>
                 </div>
 
                 <div className="skills__data">
                   {/* LOGO SKILL*/}
+                  <GithbubIcon />
+                  <h3 className="skills__name">Github</h3>
+                </div>
 
+                <div className="skills__data">
+                  {/* LOGO SKILL*/}
+                  <PostmanIcon />
                   <h3 className="skills__name">Postman</h3>
                 </div>
 
                 <div className="skills__data">
                   {/* LOGO SKILL*/}
-
+                  <YarnIcon />
                   <h3 className="skills__name">Yarn</h3>
                 </div>
 
                 <div className="skills__data">
                   {/* LOGO SKILL*/}
-
+                  <VercelIcon />
                   <h3 className="skills__name">Vercel</h3>
                 </div>
                 <div className="skills__data">
                   {/* LOGO SKILL*/}
-
+                  <NpmIcon />
                   <h3 className="skills__name">Npm</h3>
                 </div>
                 <div className="skills__data">
                   {/* LOGO SKILL*/}
-
+                  <TrelloIcon />
                   <h3 className="skills__name">Trello</h3>
                 </div>
               </div>

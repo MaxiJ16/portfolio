@@ -84,3 +84,60 @@ export const SwrIcon = styled(SWRSvg)``;
 
 import MapboxSvg from "./mapbox.svg";
 export const MapboxIcon = styled(MapboxSvg)``;
+
+// Backend
+
+import NodeSvg from "./nodejs.svg";
+export const NodeIcon = styled(NodeSvg)``;
+
+import PostgreSvg from "./postgresql.svg";
+export const PostgreIcon = styled(PostgreSvg)``;
+
+import ExpressSvg from "./express.svg";
+export const ExpressIcon = styled(ExpressSvg)``;
+
+import FirebaseSvg from "./firebase.svg";
+export const FirebaseIcon = styled(FirebaseSvg)``;
+
+import SequelizeSvg from "./sequelize.svg";
+export const SequelizeIcon = styled(SequelizeSvg)`
+width:25px;
+height: 25px;
+`;
+
+import AlgoliaSvg from "./algolia.svg";
+export const AlgoliaIcon = styled(AlgoliaSvg)``;
+
+import CloudinarySvg from "./cloudinary.svg";
+export const CloudinaryIcon = styled(CloudinarySvg)``;
+
+import JwtSvg from "./jwt.svg";
+export const JwtIcon = styled(JwtSvg)`
+  stroke: black;
+`;
+
+import AirtableSvg from "./airtable.svg";
+export const AirtableIcon = styled(AirtableSvg)``;
+
+import SendgridSvg from "./sendgrid.svg";
+export const SendgridIcon = styled(SendgridSvg)``;
+
+//  Others
+
+import GitSvg from "./git.svg";
+export const GitIcon = styled(GitSvg)``;
+
+import PostmanSvg from "./postman.svg";
+export const PostmanIcon = styled(PostmanSvg)``;
+
+import YarnSvg from "./yarn.svg";
+export const YarnIcon = styled(YarnSvg)``;
+
+import VercelSvg from "./vercel.svg";
+export const VercelIcon = styled(VercelSvg)``;
+
+import NpmSvg from "./npm.svg";
+export const NpmIcon = styled(NpmSvg)``;
+
+import TrelloSvg from "./trello.svg";
+export const TrelloIcon = styled(TrelloSvg)``;
