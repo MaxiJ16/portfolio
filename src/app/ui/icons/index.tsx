@@ -141,3 +141,8 @@ export const NpmIcon = styled(NpmSvg)``;
 
 import TrelloSvg from "./trello.svg";
 export const TrelloIcon = styled(TrelloSvg)``;
+
+// PROJECTS SECTIONS
+
+import ArrowRightSvg from "./arrow-right.svg";
+export const ArrowRightIcon = styled(ArrowRightSvg)``;

@@ -32,7 +32,7 @@ import {
   YarnIcon,
 } from "@/app/ui/icons";
 
-export const SkillsPage = () => {
+export const SkillsSection = () => {
   return (
     <SkillSection id="skills">
       <SubTitle className="section__title">Habilidades</SubTitle>

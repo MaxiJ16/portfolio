@@ -1,13 +1,15 @@
 "use client";
 
-import { HomePage } from "./components/home-page";
-import { SkillsPage } from "./components/skills-page";
+import { HomePage } from "./components/home-section";
+import { ProjectsSection } from "./components/projects-section";
+import { SkillsSection } from "./components/skills-section";
 
 export default function Home() {
   return (
     <>
       <HomePage />
-      <SkillsPage />
+      <SkillsSection />
+      <ProjectsSection />
     </>
   );
 }
