@@ -23,12 +23,12 @@ export const Header = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#project"}>
+              <Link href={"#projects"}>
                 <BodyText>Proyectos</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#tecnologies"}>
+              <Link href={"#skills"}>
                 <BodyText>Tecnologías</BodyText>
               </Link>
             </NavItem>

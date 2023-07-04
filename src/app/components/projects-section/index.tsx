@@ -1,5 +1,5 @@
-import { ArrowRightIcon } from "@/app/ui/icons";
-import { SubTitle } from "@/app/ui/typography";
+import { ArrowRightIcon, GitIcon, GithbubIcon } from "@/app/ui/icons";
+import { BodyText, SubTitle } from "@/app/ui/typography";
 import {
   ProjectSection,
   Container,
@@ -45,11 +45,23 @@ export const ProjectsSection = () => {
         {/* 3 */}
         <Card>
           <Img />
-          <Title>Piedra, Papel O Tijera</Title>
 
-          <Button href="#">
-            Demo <ArrowRightIcon />
-          </Button>
+          <div className="card-content">
+            <Title>Piedra, Papel O Tijera</Title>
+            <p className="description">Famoso piedra papel o tijeras</p>
+
+            <div className="containerButton">
+              <Button href="#">
+                <ArrowRightIcon />
+                Demo
+              </Button>
+
+              <Button href="#">
+                <GithbubIcon />
+                Code
+              </Button>
+            </div>
+          </div>
         </Card>
         {/* 4 */}
         <Card>

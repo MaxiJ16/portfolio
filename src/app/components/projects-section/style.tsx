@@ -3,10 +3,25 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.section`
   margin-top: 340px;
+
+  h2 {
+    text-align: center;
+  }
 `;
 
 export const Container = styled.div`
   padding-top: 1rem;
+  overflow: initial;
+
+  .description {
+    margin-bottom: var(--mb-0-75);
+  }
+
+  .containerButton {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
 `;
 
 export const Filters = styled.div`
@@ -37,19 +52,21 @@ export const Card = styled.div`
 `;
 
 export const Img = () => {
-  return <Image src={""} alt="" />;
+  return (
+    <Image src={"/image.png"} alt="project-img" width={265} height={265} />
+  );
 };
 
 export const Title = styled.h3`
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: auto.25rem;
+  margin-bottom: var(--mb-0-5);
 `;
 
 export const Button = styled.a`
   width: max-content;
-  padding: .3rem .6rem;
-  border-radius: 1rem;
+  padding:  0.5rem 2.5rem;
+  border-radius: .5rem;
   background-color: var(--first-color);
   color: var(--body-color);
   font-size: var(--small-font-size);
@@ -58,7 +75,7 @@ export const Button = styled.a`
   column-gap: 0.25rem;
 
   &:hover {
-    transform: translateX(0.25rem);
+    background-color: var(--first-color-alt);
   }
 
   svg {
