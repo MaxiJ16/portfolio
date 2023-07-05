@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { MenuContainer, DropdownMenu, MenuTrigger, NavList, DropdownItem } from "./styled";
 import { BurguerButton } from "@/app/ui/buttons";
-import { ContactIcon, HomeIcon, ProjetsIcon, TechIcon } from "@/app/ui/icons";
+import { SendPurpleIcon, HomeIcon, ProjetsIcon, TechIcon } from "@/app/ui/icons";
 
 export function Menu() {
   const [open, setOpen] = useState(false);
@@ -49,7 +49,7 @@ export function Menu() {
             <Link href={"#tecnologies"}>Tecnologías</Link>
           </DropdownItem>
           <DropdownItem onClick={handleClick}>
-            <ContactIcon />
+            <SendPurpleIcon />
             <Link href={"#contact"}>Contacto</Link>
           </DropdownItem>
         </NavList>

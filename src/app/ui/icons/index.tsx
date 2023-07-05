@@ -15,8 +15,8 @@ import ScenerySvg from "./scenery.svg";
 export const ProjetsIcon = styled(ScenerySvg)``;
 
 // Contacto
-import SendSvg from "./send.svg";
-export const ContactIcon = styled(SendSvg)``;
+import SendPurpleSvg from "./sendpurple.svg";
+export const SendPurpleIcon = styled(SendPurpleSvg)``;
 
 // Light - Dark Mode
 import MoonSVG from "./moon.svg";
@@ -146,3 +146,6 @@ export const TrelloIcon = styled(TrelloSvg)``;
 
 import ArrowRightSvg from "./arrow-right.svg";
 export const ArrowRightIcon = styled(ArrowRightSvg)``;
+
+import SendSvg from "./send.svg";
+export const SendIcon = styled(SendSvg)``;

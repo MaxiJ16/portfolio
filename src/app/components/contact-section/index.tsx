@@ -1,51 +1,68 @@
 import { SubTitle } from "@/app/ui/typography";
-import { Section, ContactContainer } from "./style";
+import {
+  Section,
+  ContactContainer,
+  FormTextareaContainer,
+  Form,
+  TitleForm,
+  FormDiv,
+  Input,
+  Label,
+  Textarea,
+  Button,
+} from "./style";
+import { SendIcon } from "@/app/ui/icons";
 
 export const ContactSection = () => {
   return (
     <Section className="contact section" id="contact">
       <SubTitle>Contacto</SubTitle>
+
       <ContactContainer className="container grid">
         <div className="content">
-          <h3 className="title">Escribeme</h3>
+          <TitleForm className="title">Escribeme</TitleForm>
 
-          <form action="" className="contactForm">
-            <div className="formDiv">
-              <label htmlFor="" className="tag">
+          <Form action="" className="contactForm">
+            <FormDiv className="formDiv">
+              <Label htmlFor="" className="tag">
                 Nombre
-              </label>
-              <input
+              </Label>
+              <Input
                 type="text"
                 className="input"
                 placeholder="Ingresa tu nombre"
               />
-            </div>
+            </FormDiv>
 
-            <div className="formDiv">
-              <label htmlFor="" className="tag">
+            <FormDiv className="formDiv">
+              <Label htmlFor="" className="tag">
                 Email
-              </label>
-              <input
+              </Label>
+
+              <Input
                 type="text"
                 className="input"
                 placeholder="Ingresa tu email"
               />
-            </div>
+            </FormDiv>
 
-            <div className="formDiv">
-              <label htmlFor="" className="tag">
+            <FormTextareaContainer className="formDiv">
+              <Label htmlFor="" className="tag">
                 Mensaje
-              </label>
-              <textarea
+              </Label>
+              <Textarea
                 name=""
                 id=""
                 className="textarea"
                 placeholder="Escribe tu mensaje"
-              ></textarea>
-            </div>
+              ></Textarea>
+            </FormTextareaContainer>
 
-            <button className="button">Enviar</button>
-          </form>
+            <Button className="button">
+              Enviar Mensaje
+              <SendIcon />
+            </Button>
+          </Form>
         </div>
       </ContactContainer>
     </Section>
