@@ -149,3 +149,19 @@ section {
   }
 }
 
+/* SCROLL BAR */
+
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--hue-color), 8%, 38%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: hsl(var(--hue-color), 8%, 26%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--hue-color), 8%, 20%);
+}
