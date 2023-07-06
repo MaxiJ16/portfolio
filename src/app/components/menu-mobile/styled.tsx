@@ -7,17 +7,26 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuTrigger = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
   svg {
-    stroke: white;
+    width: 30px;
+    height: 30px;
+    
+  }
+
+  /* svg {
     position: absolute;
     top: 20px;
     right: 20px;
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-  }
+  } */
 `;
 
 export const DropdownMenu = styled.div`

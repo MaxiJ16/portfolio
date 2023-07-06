@@ -52,4 +52,9 @@ export const NavList = styled.ul`
   }
 `;
 
-export const NavItem = styled.li``;
+export const NavItem = styled.li`
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+`;

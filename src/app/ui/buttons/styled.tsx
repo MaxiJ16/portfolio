@@ -9,8 +9,8 @@ export const Burguer = styled.button`
   }
 
   .nav-icon-5 {
-    width: 35px;
-    height: 30px;
+    width: 32px;
+    height: 27px;
     margin: 10px 10px;
     position: relative;
     cursor: pointer;
@@ -26,7 +26,7 @@ export const Burguer = styled.button`
     transition-duration: 500ms;
   }
   .nav-icon-5 span:nth-child(1) {
-    top: 0px;
+    top: 3px;
     left: 0px;
   }
   .nav-icon-5 span:nth-child(2) {

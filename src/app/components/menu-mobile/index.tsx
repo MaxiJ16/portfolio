@@ -1,8 +1,20 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { MenuContainer, DropdownMenu, MenuTrigger, NavList, DropdownItem } from "./styled";
+import {
+  MenuContainer,
+  DropdownMenu,
+  MenuTrigger,
+  NavList,
+  DropdownItem,
+} from "./styled";
 import { BurguerButton } from "@/app/ui/buttons";
-import { SendPurpleIcon, HomeIcon, ProjetsIcon, TechIcon } from "@/app/ui/icons";
+import {
+  SendPurpleIcon,
+  HomeIcon,
+  ProjetsIcon,
+  TechIcon,
+  MoonIcon,
+} from "@/app/ui/icons";
 
 export function Menu() {
   const [open, setOpen] = useState(false);
@@ -29,8 +41,11 @@ export function Menu() {
 
   return (
     <MenuContainer ref={menuRef}>
-      <MenuTrigger onClick={handleClick}>
-        <BurguerButton open={open} />
+      <MenuTrigger>
+        <MoonIcon />
+        <div onClick={handleClick}>
+          <BurguerButton open={open} />
+        </div>
       </MenuTrigger>
 
       <DropdownMenu className={open ? "active" : "inactive"}>
