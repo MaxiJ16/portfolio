@@ -11,7 +11,7 @@ import {
   Button,
 } from "./style";
 
-export const ProjectsSection = () => {
+export const Projects = () => {
   return (
     <ProjectSection id="projects">
       <SubTitle>Proyectos</SubTitle>

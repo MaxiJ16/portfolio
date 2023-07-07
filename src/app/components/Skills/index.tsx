@@ -5,9 +5,9 @@ import {
   TinyText,
 } from "@/app/ui/typography";
 import { SkillSection, SkillsContainer } from "./style";
-import { BackendIcons, FrontendIcons, OtherIcons } from "../skills-icons";
+import { BackendIcons, FrontendIcons, OtherIcons } from "../SkillsIcons";
 
-export const SkillsSection = () => {
+export const Skills = () => {
   return (
     <SkillSection id="skills">
       <SectionSubtitle>Mis Tecnologías</SectionSubtitle>

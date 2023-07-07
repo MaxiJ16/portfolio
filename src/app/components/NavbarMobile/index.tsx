@@ -16,7 +16,7 @@ import {
   MoonIcon,
 } from "@/app/ui/icons";
 
-export function Menu() {
+export function NavbarMobile() {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {

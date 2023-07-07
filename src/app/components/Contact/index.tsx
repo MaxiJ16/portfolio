@@ -13,7 +13,7 @@ import {
 } from "./style";
 import { SendIcon } from "@/app/ui/icons";
 
-export const ContactSection = () => {
+export const Contact = () => {
   return (
     <Section className="contact section" id="contact">
       <SubTitle>Contacto</SubTitle>

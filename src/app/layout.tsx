@@ -1,5 +1,5 @@
 import "./styles/globals.css";
-import { Header } from "./components/header";
+import { Header } from "./components/Header";
 import { Footer } from "./components/footer";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "styled-components";

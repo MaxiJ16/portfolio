@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu } from "../menu-mobile";
+import { NavbarMobile } from "../NavbarMobile";
 import { BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
@@ -46,7 +46,7 @@ export const Header = () => {
         </NavMenu>
 
         {/* Mobile Menu */}
-        <Menu />
+        <NavbarMobile />
       </Navbar>
     </HeaderContainer>
   );

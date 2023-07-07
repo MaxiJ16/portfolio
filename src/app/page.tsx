@@ -1,15 +1,15 @@
 "use client";
 
-import { ContactSection } from "./components/contact-section";
-import { HomePage } from "./components/home-section";
-import { ProjectsSection } from "./components/projects-section";
-import { SkillsSection } from "./components/skills-section";
+import { Home } from "./components/Home";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <HomePage />
-      <SkillsSection />
+      <Home />
+      <Skills />
       {/* <ProjectsSection />
       <ContactSection/> */}
     </>
