@@ -101,28 +101,8 @@ img {
 
 /* Reusable css clases */
 section {
-  height: 90vh;
-}
-
-.section__title {
-  font-size: var(--h1-font-size);
-  text-align: center;
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
-}
-
-@media (min-width: 769px) {
-  .section__subtitle {
-    margin-bottom: 4rem;
-  }
-}
-
-.section__title, .section__subtitle {
-  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Layout */

@@ -21,7 +21,7 @@ import {
   MouseIcon,
   Me,
 } from "@/app/ui/icons";
-import { ScrollLink } from "../scroll-link";
+
 
 export const HomePage = () => {
   return (
@@ -29,12 +29,12 @@ export const HomePage = () => {
       <HomeContainer className="container grid">
         <HomeContent className="grid">
           <HomeSocial>
-            <ScrollLink
+            <Link
               href={"https://www.linkedin.com/in/maximiliano-jofre/"}
               target="_blank"
             >
               <LinkedinIcon />
-            </ScrollLink>
+            </Link>
 
             <Link href={"https://github.com/MaxiJ16"} target="_blank">
               <GithbubIcon />
@@ -65,11 +65,11 @@ export const HomePage = () => {
         </HomeContent>
 
         <ScrollButton>
-          <ScrollLink href="#about" itemRef="about">
+          <Link href="#skills" itemRef="about">
             <MouseIcon />
             <BodyText>Scroll down</BodyText>
             <ArrowDownIcon />
-          </ScrollLink>
+          </Link>
         </ScrollButton>
       </HomeContainer>
     </HomeSection>

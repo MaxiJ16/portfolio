@@ -21,9 +21,22 @@ export const LargeText = styled(Title).attrs({ as: "h3" })`
 
 export const BodyText = styled.p`
   font-size: var(--normal-font-size);
-  color: var(--title-color);
 `;
 
 export const TinyText = styled.span`
   font-size: var(--small-font-size);
+`;
+
+export const SectionTitle = styled(SubTitle)`
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-3);
+`;
+
+export const SectionSubtitle = styled(LargeText)`
+  display: block;
+  text-align: center;
+  font-size: var(--small-font-size);
+
+  font-weight: 400;
 `;

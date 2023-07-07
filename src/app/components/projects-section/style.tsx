@@ -2,8 +2,6 @@ import Image from "next/image";
 import styled from "styled-components";
 
 export const ProjectSection = styled.section`
-  margin-top: 340px;
-
   h2 {
     text-align: center;
   }
