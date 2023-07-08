@@ -4,7 +4,7 @@ import {
   SubTitle,
   TinyText,
 } from "@/app/ui/typography";
-import { SkillSection, SkillsContainer } from "./style";
+import { SkillSection, SkillsContainer } from "./styled";
 import { BackendIcons, FrontendIcons, OtherIcons } from "../SkillsIcons";
 
 export const Skills = () => {

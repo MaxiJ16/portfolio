@@ -1,15 +1,10 @@
 "use client";
 
-import { Title } from "@/app/ui/typography";
-import {
-  FooterContainer,
-  FooterCopy,
-  FooterLi,
-  FooterList,
-  FooterSocial,
-} from "./style";
 import Link from "next/link";
+import { Title } from "@/app/ui/typography";
+
 import { GithbubIcon, LinkedinIcon } from "@/app/ui/icons";
+import { FooterContainer, FooterCopy, FooterLi, FooterList, FooterSocial } from "./styled";
 
 export const Footer = () => {
   return (

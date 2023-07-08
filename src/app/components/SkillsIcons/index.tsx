@@ -1,5 +1,5 @@
 import { LargeText, BodyText } from "@/app/ui/typography";
-import { SkillsContent, SkillsBox, SkillsGroup, SkillsData } from "./style";
+import { SkillsContent, SkillsBox, SkillsGroup, SkillsData } from "./styled";
 
 import {
   AirtableIcon,

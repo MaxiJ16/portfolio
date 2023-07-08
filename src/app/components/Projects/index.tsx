@@ -9,7 +9,7 @@ import {
   Img,
   Title,
   Button,
-} from "./style";
+} from "./styled";
 
 export const Projects = () => {
   return (

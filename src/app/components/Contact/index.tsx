@@ -10,7 +10,7 @@ import {
   Label,
   Textarea,
   Button,
-} from "./style";
+} from "./styled";
 import { SendIcon } from "@/app/ui/icons";
 
 export const Contact = () => {
