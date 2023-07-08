@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { NavbarMobile } from "../NavbarMobile";
 import { BodyText } from "@/app/ui/typography";

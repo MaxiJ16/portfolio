@@ -1,9 +1,4 @@
-import {
-  SectionSubtitle,
-  SectionTitle,
-  SubTitle,
-  TinyText,
-} from "@/app/ui/typography";
+import { SectionSubtitle, SectionTitle } from "@/app/ui/typography";
 import { SkillSection, SkillsContainer } from "./styled";
 import { BackendIcons, FrontendIcons, OtherIcons } from "../SkillsIcons";
 
