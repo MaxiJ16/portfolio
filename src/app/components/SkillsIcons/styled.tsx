@@ -4,10 +4,13 @@ export const SkillsContent = styled.div`
   background-color: var(--container-color);
   padding: 1rem 0.5rem;
   border-radius: 1.25rem;
-  /* border: 1px solid; */
-  
+  box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
 
-  @media(min-width: 576px ){
+  @media (min-width: 375px) {
+    padding: 1.5rem 3rem;
+  }
+
+  @media (min-width: 576px) {
     padding: 2rem 4rem;
   }
 
@@ -15,7 +18,6 @@ export const SkillsContent = styled.div`
     font-size: var(--normal-font-size);
     color: var(--first-color);
     text-align: center;
-    margin-bottom: 1.5rem;
   }
 `;
 
@@ -23,7 +25,6 @@ export const SkillsBox = styled.div`
   display: flex;
   justify-content: center;
   column-gap: 1rem;
-
 `;
 
 export const SkillsGroup = styled.div`
@@ -51,5 +52,17 @@ export const SkillsData = styled.div`
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     max-width: 90px;
+  }
+
+  &:hover {
+    box-shadow: rgba(105, 17, 17, 0.1) 0px 30px 60px;
+    font-weight: bold;
+    border-radius: 10px;
+    transform: translateY(0.3rem);
+    transition: 0.2s;
+
+    p {
+      font-weight: bold;
+    }
   }
 `;
