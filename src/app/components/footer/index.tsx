@@ -4,7 +4,7 @@ import { Title } from "@/app/ui/typography";
 import { GithbubIcon, LinkedinIcon } from "@/app/ui/icons";
 import { FooterContainer, FooterCopy, FooterLi, FooterList, FooterSocial } from "./styled";
 
-export const Footer = () => {
+export const FooterComp = () => {
   return (
     <FooterContainer className="container">
       <Title>Maxi</Title>

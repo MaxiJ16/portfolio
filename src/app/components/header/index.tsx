@@ -4,7 +4,7 @@ import { BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 
-export const Header = () => {
+export const HeaderComp = () => {
   return (
     <HeaderContainer>
       <Navbar>
