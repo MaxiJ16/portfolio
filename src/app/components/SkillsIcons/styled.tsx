@@ -4,6 +4,8 @@ export const SkillsContent = styled.div`
   background-color: var(--container-color);
   padding: 1rem 0.5rem;
   border-radius: 1.25rem;
+  /* border: 1px solid; */
+  
 
   @media(min-width: 576px ){
     padding: 2rem 4rem;
@@ -29,6 +31,8 @@ export const SkillsGroup = styled.div`
   row-gap: 1rem;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  min-width: 260px;
+  min-height: 260px;
 `;
 
 export const SkillsData = styled.div`
