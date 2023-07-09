@@ -13,8 +13,8 @@ export default function HomePage() {
       <HeaderComp />
       <Home />
       <Skills />
-      {/* <ProjectsSection />
-      <ContactSection/> */}
+      <Projects />
+      {/* <ContactSection/> */}
       <FooterComp />
     </>
   );
