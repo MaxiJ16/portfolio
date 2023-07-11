@@ -1,8 +1,9 @@
-// import useSWRImmutable from "swr/immutable";
-// // import { getContent } from "../lib/api";
+import useSWRImmutable from "swr/immutable";
+import { getContenfulContent } from "../lib/api";
 
-// export const useGetDataContentful = () => {
-//   const { data, error } = useSWRImmutable("/api/content", getContent);
 
-//   return data ? data : error;
-// };
+export const useGetData = () => {
+  const { data, error } = useSWRImmutable("/api/content", getContenfulContent);
+
+  return data ? data : error;
+};

@@ -1,15 +1,11 @@
-// // import { contentfulClient } from "./contentful";
+import { ContentfulClient } from "./contentful";
 
-// export async function getContent() {
-//   try {
-//     const res = await contentfulClient.getEntries();
-
-//     const data = res.items.map((item: any) => {
-//       return item.fields;
-//     });
-
-//     return data;
-//   } catch (error) {
-//     return error;
-//   }
-// }
+export const getContenfulContent = async () => {
+  try {
+    const response = await ContentfulClient.getContentTypes();
+    console.log(response.items);
+    return response.items;
+  } catch (error) {
+    return error;
+  }
+};

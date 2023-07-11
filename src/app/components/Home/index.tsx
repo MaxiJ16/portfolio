@@ -3,7 +3,6 @@ import Image from "next/image";
 import ImagePng from "../../ui/icons/image.png";
 // import { useGetDataContentful } from "../../hooks/index";
 
-
 import { BodyText, LargeText, Title } from "@/app/ui/typography";
 import {
   HomeContainer,
@@ -23,11 +22,11 @@ import {
   MouseIcon,
   Me,
 } from "@/app/ui/icons";
-import { contentfulData } from "@/app/lib/contentful";
+import { useGetData } from "@/app/hooks";
 
-export const Home =  () => {
-  // const { data } = await useGetDataContentful();
-  contentfulData()
+export const Home = () => {
+  const data = useGetData();
+  console.log(data);
   return (
     <HomeSection>
       <HomeContainer className="container grid">
