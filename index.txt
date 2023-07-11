@@ -1,1 +1,1 @@
-https://cdn.contentful.com/spaces/{space_id}/environments/{environment_id}/entries?access_token={access_token}&content_type=proyectos
+https://cdn.contentful.com/spaces/j7x7byynhemm/environments/master/entries?access_token=PU1hsnIdII_G49fpEflNmA-Hk1r-qlOpWqphjEavlA4&content_type=proyectos

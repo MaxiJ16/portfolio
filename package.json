@@ -13,11 +13,13 @@
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@types/styled-components": "^5.1.26",
+    "contentful": "^10.3.4",
     "next": "13.4.3",
     "next-svgr": "^0.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.11",
+    "swr": "^2.2.0",
     "typescript": "5.0.4"
   }
 }
