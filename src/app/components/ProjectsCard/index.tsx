@@ -1,13 +1,15 @@
 import { BodyText, LargeText, SubTitle } from "@/app/ui/typography";
 import { ArrowRightIcon, GitIcon, GithbubIcon } from "@/app/ui/icons";
+import { ImageComponent } from "@/app/ui/image";
+
 import {
   CardContainer,
   ContainerButtons,
   CardContent,
   Title,
   ButtonLink,
+  ContainerImg
 } from "./styled";
-import { ImageComponent } from "@/app/ui/image";
 
 type CardProps = {
   title: string;
@@ -26,19 +28,21 @@ export const Card = ({
 }: CardProps) => {
   return (
     <CardContainer>
-      <ImageComponent src={img} alt={`${title}-img`} />
+      <ContainerImg>
+        <ImageComponent src={img} alt={`${title}-img`} />
+      </ContainerImg>
 
       <CardContent>
         <Title>{title}</Title>
         <BodyText>{description}</BodyText>
 
         <ContainerButtons>
-          <ButtonLink href={demoUrl}>
+          <ButtonLink href={demoUrl} target="_blank">
             <ArrowRightIcon />
             Demo
           </ButtonLink>
 
-          <ButtonLink href={codeUrl}>
+          <ButtonLink href={codeUrl} target="_blank">
             <GithbubIcon />
             Code
           </ButtonLink>

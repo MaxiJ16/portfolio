@@ -17,7 +17,7 @@ export const Projects = () => {
     <ProjectSection id="projects">
       <SubTitle>Proyectos</SubTitle>
 
-      <Container className="container grid">
+      <Container>
         {projects?.map((p) => (
           <Card
             title={p.title}

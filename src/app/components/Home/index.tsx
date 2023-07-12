@@ -22,10 +22,7 @@ import {
   Me,
 } from "@/app/ui/icons";
 
-
-
-export const Home = () => {
-  
+export const HomePage = () => {
   return (
     <HomeSection>
       <HomeContainer className="container grid">
