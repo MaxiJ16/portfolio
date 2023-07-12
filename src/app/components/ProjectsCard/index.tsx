@@ -1,24 +1,49 @@
-import { LargeText, SubTitle } from "@/app/ui/typography";
-import { ContainerCard, CardImg, CardContent, Img } from "./styled";
+import { BodyText, LargeText, SubTitle } from "@/app/ui/typography";
+import { ArrowRightIcon, GitIcon, GithbubIcon } from "@/app/ui/icons";
+import {
+  CardContainer,
+  ContainerButtons,
+  CardContent,
+  Title,
+  ButtonLink,
+} from "./styled";
+import { ImageComponent } from "@/app/ui/image";
 
-type propsCard = {
-  title?: string;
-  price?: string;
-  img?: string;
-  objectId?: string;
+type CardProps = {
+  title: string;
+  img: string;
+  description: string;
+  demoUrl: string;
+  codeUrl: string;
 };
 
-export function Card({ title = "Titulo", price = "price", img, objectId }: propsCard) {
+export const Card = ({
+  title,
+  img,
+  description,
+  demoUrl,
+  codeUrl,
+}: CardProps) => {
   return (
-    <ContainerCard>
-      <CardImg>
-        <Img src={img} alt={`${title}-img`} />
-      </CardImg>
+    <CardContainer>
+      <ImageComponent src={img} alt={`${title}-img`} />
 
       <CardContent>
-        <SubTitle>{title}</SubTitle>
-        <LargeText>{price}</LargeText>
+        <Title>{title}</Title>
+        <BodyText>{description}</BodyText>
+
+        <ContainerButtons>
+          <ButtonLink href={demoUrl}>
+            <ArrowRightIcon />
+            Demo
+          </ButtonLink>
+
+          <ButtonLink href={codeUrl}>
+            <GithbubIcon />
+            Code
+          </ButtonLink>
+        </ContainerButtons>
       </CardContent>
-    </ContainerCard>
+    </CardContainer>
   );
-}
+};

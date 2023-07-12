@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import ImagePng from "../../ui/icons/image.png";
-// import { useGetDataContentful } from "../../hooks/index";
 
 import { BodyText, LargeText, Title } from "@/app/ui/typography";
 import {
@@ -22,11 +21,11 @@ import {
   MouseIcon,
   Me,
 } from "@/app/ui/icons";
-import { useGetData } from "@/app/hooks";
+
+
 
 export const Home = () => {
-  const data = useGetData();
-  console.log(data);
+  
   return (
     <HomeSection>
       <HomeContainer className="container grid">
