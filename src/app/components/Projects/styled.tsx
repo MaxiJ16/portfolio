@@ -5,7 +5,7 @@ export const ProjectSection = styled.section`
 
   h2 {
     text-align: center;
-    font-size: var(--h1-font-size)
+    font-size: var(--h1-font-size);
   }
 `;
 
@@ -18,12 +18,8 @@ export const Container = styled.div`
   justify-content: center;
   gap: 30px;
 
-  @media(min-width: 769px){
-    grid-template-columns: repeat(2, max-content)
-  }
-
-  @media(min-width: 1024px){
-    
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, max-content);
     gap: 3rem;
   }
 `;

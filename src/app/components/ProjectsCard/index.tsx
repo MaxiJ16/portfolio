@@ -8,7 +8,7 @@ import {
   CardContent,
   Title,
   ButtonLink,
-  ContainerImg
+  ContainerImg,
 } from "./styled";
 
 type CardProps = {

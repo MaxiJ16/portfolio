@@ -13,29 +13,49 @@ export const CardContainer = styled.div`
   gap: 10px;
   margin: 0 auto;
 
+  &:hover {
+    box-shadow: var(--first-color) 0px 5px 20px;
+  }
+
   @media (min-width: 375px) {
     width: 350px;
     padding: 1rem;
+    box-sizing: border-box;
   }
 
   @media (min-width: 769px) {
-    height: 500px;
+    width: 420px;
+    height: auto;
     gap: 0px;
   }
 
   @media (min-width: 1024px) {
-    gap: 3rem;
+    gap: 1rem;
   }
 
-
+  @media (min-width: 1200px) {
+    width: 480px;
+  }
 `;
 
 export const CardContent = styled.div`
   max-width: 100%;
+  height: auto;
+
   p {
     margin-bottom: var(--mb-0-75);
     font-size: var(--smaller-font-size);
   }
+
+  @media (min-width: 1024px) {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
 `;
 export const Title = styled.h3`
   font-size: var(--h3-font-size);
@@ -66,16 +86,21 @@ export const ButtonLink = styled.a`
 `;
 
 export const ContainerImg = styled.div`
-  height: 100%;
   width: 100%;
 
   img {
-    width: 300px;
-    height: 220px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
     border-radius: 1rem;
     margin: 0 auto 1rem;
     box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
+  }
+
+  @media (min-width: 769px) {
+    img {
+      height: 300px;
+    }
   }
 `;
 
@@ -84,4 +109,12 @@ export const ContainerButtons = styled.div`
   display: flex;
   justify-content: space-around;
   gap: 5px;
+
+  @media(min-width: 769px){
+    height: 70px;
+  }
+
+  @media(min-width: 1024px){
+    gap: 30px;
+  }
 `;
