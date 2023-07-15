@@ -9,13 +9,13 @@ import { FooterComp } from "./components/footer";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeaderComp />
       <HomePage />
       <Skills />
       <Projects />
       <Contact />
       <FooterComp />
-    </>
+    </main>
   );
 }
