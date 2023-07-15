@@ -25,7 +25,7 @@ export const HeaderContainer = styled.header`
     }
 
     @media (min-width: 1500px) {
-      padding: 2rem 16rem 4rem;
+      padding: 2rem 16rem;
     }
   }
 `;
@@ -42,7 +42,8 @@ export const Navbar = styled.nav`
   }
 
   @media (min-width: 350px) {
-    padding: 1rem 2rem 2rem;
+    padding: .6rem 2rem;
+    border-radius: 30px;
   }
 
   @media (min-width: 769px) {

@@ -16,7 +16,9 @@ export const SubTitle = styled(Title).attrs({ as: "h2" })`
 `;
 
 export const LargeText = styled(Title).attrs({ as: "h3" })`
-  font-size: 28px;
+  font-size: 1.5rem;
+  font-weight: var(--font-medium);
+  color: #575757;
 `;
 
 export const BodyText = styled.p`

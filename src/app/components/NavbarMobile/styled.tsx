@@ -19,7 +19,7 @@ export const MenuTrigger = styled.div`
 
 export const DropdownMenu = styled.div`
   position: fixed;
-  top: 100px;
+  top: 75px;
   right: 20px;
   background-color: var(--body-color);
   border-radius: 0rem 0rem 1.5rem 1.5rem;

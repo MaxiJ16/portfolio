@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NavbarMobile } from "../NavbarMobile";
-import { BodyText } from "@/app/ui/typography";
+import { LargeText, BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 import { useEffect } from "react";
@@ -26,7 +26,7 @@ export const HeaderComp: React.FC = () => {
     <HeaderContainer className="nav">
       <Navbar>
         <Link href="#">
-          <BodyText>Maxi</BodyText>
+          <LargeText>Maxi</LargeText>
         </Link>
 
         {/* Desktop Menu */}
