@@ -38,6 +38,5 @@ export const SectionSubtitle = styled(LargeText)`
   display: block;
   text-align: center;
   font-size: var(--small-font-size);
-
   font-weight: 400;
 `;

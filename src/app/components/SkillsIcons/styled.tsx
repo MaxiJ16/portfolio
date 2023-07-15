@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 export const SkillsContent = styled.div`
+  width: 260px;
+  margin: 0 auto;
   background-color: var(--container-color);
-  padding: 1rem 0.5rem;
+  padding: 1rem .9rem;
   border-radius: 1.25rem;
   box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
 
   @media (min-width: 375px) {
-    padding: 1.5rem 3rem;
+    width: auto;
+    padding: 1.5rem 2.6rem;
   }
 
   @media (min-width: 576px) {

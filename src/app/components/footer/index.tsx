@@ -6,7 +6,7 @@ import { FooterContainer, FooterCopy, FooterLi, FooterList, FooterSocial } from 
 
 export const FooterComp = () => {
   return (
-    <FooterContainer className="container">
+    <FooterContainer>
       <Title>Maxi</Title>
 
       <FooterList>

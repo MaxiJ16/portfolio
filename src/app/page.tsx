@@ -1,9 +1,10 @@
 "use client";
 
+import { HeaderComp } from "./components/header";
+import { HomePage } from "./components/Home";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
-import { HomePage } from "./components/Home";
-import { HeaderComp } from "./components/header";
+import { Contact } from "./components/Contact";
 import { FooterComp } from "./components/footer";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <HomePage />
       <Skills />
       <Projects />
-      {/* <ContactSection/> */}
+      <Contact />
       <FooterComp />
     </>
   );

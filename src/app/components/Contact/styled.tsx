@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  padding-top: 400px;
-  margin-top: 400px;
+  padding: 0 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 
   h2 {
     text-align: center;
@@ -11,7 +12,6 @@ export const Section = styled.section`
 `;
 
 export const ContactContainer = styled.div`
-  padding-bottom: 3rem;
   row-gap: 3rem;
 `;
 
@@ -85,12 +85,11 @@ export const Button = styled.button`
   justify-content: center;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1rem;
+  padding: .8rem;
   border-radius: 0.5rem;
-  font-weight: var(--font-semi-bold);
   font-size: 1rem;
 
-   svg {
+  svg {
     width: 20px;
     height: 20px;
     margin-left: var(--mb-0-5);
@@ -100,5 +99,4 @@ export const Button = styled.button`
   &:hover {
     background-color: var(--first-color-alt);
   }
-
 `;

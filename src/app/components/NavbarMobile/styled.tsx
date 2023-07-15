@@ -14,19 +14,7 @@ export const MenuTrigger = styled.div`
   svg {
     width: 30px;
     height: 30px;
-    
   }
-
-  /* svg {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-  } */
 `;
 
 export const DropdownMenu = styled.div`
@@ -34,7 +22,7 @@ export const DropdownMenu = styled.div`
   top: 100px;
   right: 20px;
   background-color: var(--body-color);
-  border-radius: 0rem 0rem 1.5rem 1.5rem; // CHEQUEAR
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
   padding: 10px;
   width: 210px;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);

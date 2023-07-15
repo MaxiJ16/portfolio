@@ -11,7 +11,7 @@ export const ProjectSection = styled.section`
 
 export const Container = styled.div`
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 4rem .5rem;
   overflow: initial;
   display: grid;
   align-items: center;

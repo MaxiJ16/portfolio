@@ -3,10 +3,27 @@ import { NavbarMobile } from "../NavbarMobile";
 import { BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
+import { useEffect } from "react";
 
-export const HeaderComp = () => {
+export const HeaderComp: React.FC = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector("nav");
+      if (window.scrollY > 0) {
+        navbar?.classList.add("scrolled");
+      } else {
+        navbar?.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <HeaderContainer>
+    <HeaderContainer className="nav">
       <Navbar>
         <Link href="#">
           <BodyText>Maxi</BodyText>

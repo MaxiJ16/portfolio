@@ -55,7 +55,6 @@ export const CardContent = styled.div`
     align-items: center;
     text-align: center;
   }
-
 `;
 export const Title = styled.h3`
   font-size: var(--h3-font-size);
@@ -110,11 +109,11 @@ export const ContainerButtons = styled.div`
   justify-content: space-around;
   gap: 5px;
 
-  @media(min-width: 769px){
+  @media (min-width: 769px) {
     height: 70px;
   }
 
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
     gap: 30px;
   }
 `;
