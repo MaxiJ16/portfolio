@@ -33,18 +33,18 @@ export const HeaderComp: React.FC = () => {
         <NavMenu>
           <NavList className="grid">
             <NavItem>
-              <Link href={"#home"}>
+              <Link href={"#"}>
                 <BodyText>Sobre Mi</BodyText>
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link href={"#projects"}>
-                <BodyText>Proyectos</BodyText>
               </Link>
             </NavItem>
             <NavItem>
               <Link href={"#skills"}>
                 <BodyText>Tecnologías</BodyText>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href={"#projects"}>
+                <BodyText>Proyectos</BodyText>
               </Link>
             </NavItem>
             <NavItem>

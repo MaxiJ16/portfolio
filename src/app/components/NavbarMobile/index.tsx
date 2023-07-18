@@ -55,14 +55,13 @@ export function NavbarMobile() {
             <HomeIcon />
             <Link href={"#"}>Sobre Mi</Link>
           </DropdownItem>
-
+          <DropdownItem onClick={handleClick}>
+            <TechIcon />
+            <Link href={"#skills"}>Tecnologías</Link>
+          </DropdownItem>
           <DropdownItem onClick={handleClick}>
             <ProjetsIcon />
             <Link href={"#projects"}>Proyectos</Link>
-          </DropdownItem>
-          <DropdownItem onClick={handleClick}>
-            <TechIcon />
-            <Link href={"#tecnologies"}>Tecnologías</Link>
           </DropdownItem>
           <DropdownItem onClick={handleClick}>
             <SendPurpleIcon />
