@@ -1,9 +1,9 @@
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import { NavbarMobile } from "../NavbarMobile";
 import { LargeText, BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
-import { useEffect } from "react";
-import Link from "next/link";
 
 export const HeaderComp: React.FC = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ export const HeaderComp: React.FC = () => {
   return (
     <HeaderContainer className="nav">
       <Navbar>
-        <Link href="top" data-scroll-to="top">
+        <Link href="#top" data-scroll-to="top" onClick={() => window.scrollTo(0,0)}>
           <LargeText>Maxi</LargeText>
         </Link>
 

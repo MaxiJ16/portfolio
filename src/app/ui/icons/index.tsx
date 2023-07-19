@@ -41,7 +41,13 @@ import Image from "next/image";
 
 export function Me() {
   return (
-    <Image src="/image.png" alt="me" width="250" height="250" priority={true} />
+    <Image
+      src="/image.png"
+      alt="me"
+      width="1000"
+      height="1000"
+      priority={true}
+    />
   );
 }
 
