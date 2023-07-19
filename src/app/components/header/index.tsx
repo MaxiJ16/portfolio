@@ -1,9 +1,9 @@
-import Link from "next/link";
 import { NavbarMobile } from "../NavbarMobile";
 import { LargeText, BodyText } from "@/app/ui/typography";
 import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export const HeaderComp: React.FC = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ export const HeaderComp: React.FC = () => {
   return (
     <HeaderContainer className="nav">
       <Navbar>
-        <Link href="#">
+        <Link href="top" data-scroll-to="top">
           <LargeText>Maxi</LargeText>
         </Link>
 
@@ -33,22 +33,22 @@ export const HeaderComp: React.FC = () => {
         <NavMenu>
           <NavList className="grid">
             <NavItem>
-              <Link href={"#"}>
+              <Link href={"#top"} data-scroll-to="top">
                 <BodyText>Sobre Mi</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#skills"}>
+              <Link href={"#skills"} data-scroll-to="skills">
                 <BodyText>Tecnologías</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#projects"}>
+              <Link href={"#projects"} data-scroll-to="projects">
                 <BodyText>Proyectos</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#contact"}>
+              <Link href={"#contact"} data-scroll-to="contact">
                 <BodyText>Contacto</BodyText>
               </Link>
             </NavItem>

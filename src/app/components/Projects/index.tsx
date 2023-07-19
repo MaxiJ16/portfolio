@@ -14,7 +14,7 @@ interface Project {
 export const Projects = () => {
   const projects: Project[] | undefined = useGetProjects();
   return (
-    <ProjectSection id="projects">
+    <ProjectSection id="projects" data-scroll-section>
       <SubTitle>Proyectos</SubTitle>
 
       <Container>

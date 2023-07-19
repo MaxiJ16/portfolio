@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/locomotive-scroll": "^4.1.0",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@types/styled-components": "^5.1.26",
+    "locomotive-scroll": "^4.1.4",
     "next": "13.4.3",
     "next-navigation": "^1.0.6",
     "next-svgr": "^0.0.2",

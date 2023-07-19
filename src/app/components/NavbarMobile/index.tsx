@@ -53,19 +53,19 @@ export function NavbarMobile() {
         <NavList>
           <DropdownItem onClick={handleClick}>
             <HomeIcon />
-            <Link href={"#"}>Sobre Mi</Link>
+            <Link href={"#top"} data-scroll-to="top">Sobre Mi</Link>
           </DropdownItem>
           <DropdownItem onClick={handleClick}>
             <TechIcon />
-            <Link href={"#skills"}>Tecnologías</Link>
+            <Link href={"#skills"} data-scroll-to="skills">Tecnologías</Link>
           </DropdownItem>
           <DropdownItem onClick={handleClick}>
             <ProjetsIcon />
-            <Link href={"#projects"}>Proyectos</Link>
+            <Link href={"#projects"} data-scroll-to="projects">Proyectos</Link>
           </DropdownItem>
           <DropdownItem onClick={handleClick}>
             <SendPurpleIcon />
-            <Link href={"#contact"}>Contacto</Link>
+            <Link href={"#contact"} data-scroll-to="contact">Contacto</Link>
           </DropdownItem>
         </NavList>
       </DropdownMenu>

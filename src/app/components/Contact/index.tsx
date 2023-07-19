@@ -15,7 +15,7 @@ import {
 
 export const Contact = () => {
   return (
-    <Section id="contact">
+    <Section id="contact" data-scroll-section>
       <SectionSubtitle>Escribeme</SectionSubtitle>
       <SectionTitle>Contacto</SectionTitle>
 

@@ -4,7 +4,7 @@ import { BackendIcons, FrontendIcons, OtherIcons } from "../SkillsIcons";
 
 export const Skills = () => {
   return (
-    <SkillSection id="skills">
+    <SkillSection id="skills" data-scroll-section>
       <SectionSubtitle>Mis Tecnologías</SectionSubtitle>
       <SectionTitle>Habilidades</SectionTitle>
 

@@ -24,7 +24,7 @@ import {
 
 export const HomePage = () => {
   return (
-    <HomeSection>
+    <HomeSection id="top" data-scroll-section>
       <HomeContainer className="container grid">
         <HomeContent className="grid">
           <HomeSocial>
