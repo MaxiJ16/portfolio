@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.section`
   width: 100%;
-  
-  h2 {
-    text-align: center;
-    font-size: var(--h1-font-size);
-  }
+`;
+
+export const ContainerTitlesSection = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
 `;
 
 export const Container = styled.div`
   width: 100%;
-  padding: 4rem .5rem;
+  padding: 4rem 0.5rem;
   overflow: initial;
   display: grid;
   align-items: center;

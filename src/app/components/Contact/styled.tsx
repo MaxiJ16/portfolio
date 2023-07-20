@@ -5,11 +5,6 @@ export const Section = styled.section`
   padding-right: 1rem;
   max-width: 600px;
   margin: 0 auto;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
 `;
 
 export const ContactContainer = styled.div`

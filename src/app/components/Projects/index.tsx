@@ -1,5 +1,5 @@
-import { SubTitle } from "@/app/ui/typography";
-import { ProjectSection, Container } from "./styled";
+import { SectionTitle, SectionSubtitle } from "@/app/ui/typography";
+import { ProjectSection, Container, ContainerTitlesSection } from "./styled";
 import { Card } from "../ProjectsCard";
 import { useGetProjects } from "@/app/hooks";
 
@@ -15,7 +15,11 @@ export const Projects = () => {
   const projects: Project[] | undefined = useGetProjects();
   return (
     <ProjectSection id="projects" data-scroll-section>
-      <SubTitle>Proyectos</SubTitle>
+      
+      <ContainerTitlesSection>
+        <SectionTitle>Proyectos</SectionTitle>
+        <SectionSubtitle>Mi Portfolio</SectionSubtitle>
+      </ContainerTitlesSection>
 
       <Container>
         {projects?.map((p) => (

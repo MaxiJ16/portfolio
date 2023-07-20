@@ -31,6 +31,7 @@ export const TinyText = styled.span`
 
 export const SectionTitle = styled(SubTitle)`
   font-size: var(--h1-font-size);
+  color: var(--first-color);
   text-align: center;
   margin-bottom: var(--mb-3);
 `;

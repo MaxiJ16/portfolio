@@ -6,10 +6,9 @@ import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 
 export const HeaderComp: React.FC = () => {
-  const handleClickSection = () => {
-    const section = document.querySelector("section");
-    console.log(section);
-  };
+  // const handleClickSection = () => {
+  //   console.log(section);
+  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +25,6 @@ export const HeaderComp: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
   }, []);
 
   return (
@@ -44,12 +42,12 @@ export const HeaderComp: React.FC = () => {
         <NavMenu>
           <NavList className="grid">
             <NavItem>
-              <Link href={"#top"} data-scroll-to="top" onClick={handleClickSection}>
+              <Link href={"#top"} data-scroll-to="top">
                 <BodyText>Sobre Mi</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#skills"} data-scroll-to="skills" onClick={handleClickSection}>
+              <Link href={"#skills"} data-scroll-to="skills">
                 <BodyText>Tecnologías</BodyText>
               </Link>
             </NavItem>

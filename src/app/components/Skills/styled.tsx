@@ -1,9 +1,5 @@
 import styled from "styled-components";
-export const SkillSection = styled.section`
-  h2 {
-    color: var(--first-color);
-  }
-`;
+export const SkillSection = styled.section``;
 
 export const SkillsContainer = styled.div`
   row-gap: 2rem;

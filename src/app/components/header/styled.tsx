@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   width: 100%;
-  border-top: 3px solid var(--first-color);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,19 +12,6 @@ export const HeaderContainer = styled.header`
 
     @media (min-width: 769px) {
       border-radius: 1rem;
-      padding: 2rem 3.25rem;
-    }
-
-    @media (min-width: 1024px) {
-      padding: 2rem 4.5rem 4rem;
-    }
-
-    @media (min-width: 1200px) {
-      padding: 2rem 12rem 4rem;
-    }
-
-    @media (min-width: 1500px) {
-      padding: 2rem 16rem;
     }
   }
 `;
@@ -42,23 +28,23 @@ export const Navbar = styled.nav`
   }
 
   @media (min-width: 350px) {
-    padding: .6rem 2rem;
+    padding: 0.6rem 2rem;
     border-radius: 30px;
   }
 
   @media (min-width: 769px) {
-    padding: 2rem 3.25rem 4rem;
+    padding: 1.5rem 3.25rem;
   }
 
   @media (min-width: 1024px) {
-    padding: 2rem 4.5rem 4rem;
+    padding: 1.5rem 4.5rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 2rem 12rem 4rem;
+    padding: 1.5rem 12rem;
   }
   @media (min-width: 1500px) {
-    padding: 2rem 16rem 4rem;
+    padding: 1.5rem 16rem;
   }
 `;
 
@@ -74,6 +60,7 @@ export const NavList = styled.ul`
   @media (min-width: 769px) {
     display: flex;
     flex-direction: row;
+    align-items: center;
     column-gap: 2rem;
   }
 `;

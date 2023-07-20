@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const HomeSection = styled.section`
-  margin-top: 60px;
-`;
+export const HomeSection = styled.section``;
 
 export const HomeContainer = styled.div`
   gap: 3rem;
