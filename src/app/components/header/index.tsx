@@ -6,6 +6,11 @@ import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 
 export const HeaderComp: React.FC = () => {
+  const handleClickSection = () => {
+    const section = document.querySelector("section");
+    console.log(section);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector("nav");
@@ -21,11 +26,17 @@ export const HeaderComp: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+
   }, []);
+
   return (
     <HeaderContainer className="nav">
       <Navbar>
-        <Link href="#top" data-scroll-to="top" onClick={() => window.scrollTo(0,0)}>
+        <Link
+          href="#top"
+          data-scroll-to="top"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <LargeText>Maxi</LargeText>
         </Link>
 
@@ -33,12 +44,12 @@ export const HeaderComp: React.FC = () => {
         <NavMenu>
           <NavList className="grid">
             <NavItem>
-              <Link href={"#top"} data-scroll-to="top">
+              <Link href={"#top"} data-scroll-to="top" onClick={handleClickSection}>
                 <BodyText>Sobre Mi</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#skills"} data-scroll-to="skills">
+              <Link href={"#skills"} data-scroll-to="skills" onClick={handleClickSection}>
                 <BodyText>Tecnologías</BodyText>
               </Link>
             </NavItem>

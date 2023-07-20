@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.section`
   width: 100%;
-
+  
   h2 {
     text-align: center;
     font-size: var(--h1-font-size);
