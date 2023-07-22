@@ -1,5 +1,6 @@
 import useSWRImmutable from "swr/immutable";
 import { getContenfulContent } from "../lib/api";
+import useSWR from "swr";
 
 interface Asset {
   sys: {
@@ -50,6 +51,7 @@ export const useGetProjects = () => {
         image: string;
         codeUrl: string;
         demoUrl: string;
+        id: string;
       }[]
     | undefined = data?.items.map((item: Item) => {
     // Obtenemos el id de las imagenes en cada iteración.
@@ -62,8 +64,25 @@ export const useGetProjects = () => {
       image: "https:" + imageUrl,
       codeUrl: item.fields.codeUrl,
       demoUrl: item.fields.demoUrl,
+      id: imageId,
     };
   });
 
   return fieldsCollection;
+};
+
+export const useThemeMode = () => {
+  const { data, mutate } = useSWR("theme", () => "default");
+
+  const toggleTheme = () => {
+    if (data === "default") {
+      mutate("dark");
+      return;
+    }
+
+    mutate("default");
+  };
+
+  const theme = data;
+  return [theme, toggleTheme];
 };

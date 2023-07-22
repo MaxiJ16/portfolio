@@ -9,13 +9,13 @@ interface Project {
   description: string;
   demoUrl: string;
   codeUrl: string;
+  id: string;
 }
 
 export const Projects = () => {
   const projects: Project[] | undefined = useGetProjects();
   return (
     <ProjectSection id="projects" data-scroll-section>
-      
       <ContainerTitlesSection>
         <SectionTitle>Proyectos</SectionTitle>
         <SectionSubtitle>Mi Portfolio</SectionSubtitle>
@@ -29,7 +29,7 @@ export const Projects = () => {
             description={p.description}
             demoUrl={p.demoUrl}
             codeUrl={p.codeUrl}
-            key={p.title}
+            key={p.id}
           />
         ))}
       </Container>

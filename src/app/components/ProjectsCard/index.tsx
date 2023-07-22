@@ -1,5 +1,5 @@
-import { BodyText, LargeText, SubTitle } from "@/app/ui/typography";
-import { ArrowRightIcon, GitIcon, GithbubIcon } from "@/app/ui/icons";
+import { BodyText } from "@/app/ui/typography";
+import { ArrowRightIcon, GithbubIcon } from "@/app/ui/icons";
 import { ImageComponent } from "@/app/ui/image";
 
 import {
