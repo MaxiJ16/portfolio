@@ -2,7 +2,13 @@ import Link from "next/link";
 import { Title } from "@/app/ui/typography";
 
 import { GithbubIcon, LinkedinIcon } from "@/app/ui/icons";
-import { FooterContainer, FooterCopy, FooterLi, FooterList, FooterSocial } from "./styled";
+import {
+  FooterContainer,
+  FooterCopy,
+  FooterLi,
+  FooterList,
+  FooterSocial,
+} from "./styled";
 
 export const FooterComp = () => {
   return (
@@ -11,15 +17,25 @@ export const FooterComp = () => {
 
       <FooterList>
         <FooterLi>
-          <Link href={"#"}>Home</Link>
+          <Link
+            href="#top"
+            data-scroll-to="top"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            Home
+          </Link>
         </FooterLi>
 
         <FooterLi>
-          <Link href={"#skills"}>Habilidades</Link>
+          <Link href={"#skills"} data-scroll-to="skills">
+            Habilidades
+          </Link>
         </FooterLi>
 
         <FooterLi>
-          <Link href={"#projects"}>Proyectos</Link>
+          <Link href={"#projects"} data-scroll-to="projects">
+            Proyectos
+          </Link>
         </FooterLi>
       </FooterList>
 

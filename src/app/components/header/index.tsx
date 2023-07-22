@@ -6,10 +6,6 @@ import { MoonIcon } from "@/app/ui/icons";
 import { Navbar, HeaderContainer, NavList, NavItem, NavMenu } from "./styled";
 
 export const HeaderComp: React.FC = () => {
-  // const handleClickSection = () => {
-  //   console.log(section);
-  // };
-
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector("nav");
