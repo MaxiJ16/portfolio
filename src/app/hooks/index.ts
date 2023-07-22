@@ -1,6 +1,7 @@
 import useSWRImmutable from "swr/immutable";
 import { getContenfulContent } from "../lib/api";
 import useSWR from "swr";
+import { useState } from "react";
 
 interface Asset {
   sys: {
@@ -72,17 +73,11 @@ export const useGetProjects = () => {
 };
 
 export const useThemeMode = () => {
-  const { data, mutate } = useSWR("theme", () => "default");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   const toggleTheme = () => {
-    if (data === "default") {
-      mutate("dark");
-      return;
-    }
-
-    mutate("default");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const theme = data;
-  return [theme, toggleTheme];
+  return [theme, toggleTheme] as const;
 };

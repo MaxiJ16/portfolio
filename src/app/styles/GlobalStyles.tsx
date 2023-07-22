@@ -1,5 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
+export const themes = {
+  light: {
+    background: "#f1f1f1",
+    text: "#000",
+  },
+  dark: {
+    background: "#23292d",
+    text: "#FFF",
+  },
+};
+
 export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -17,8 +28,10 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     overflow-x: hidden;
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
+    background-color: ${(props) => props.theme.background};
+    transition: all 0.15s linear;
+    color: ${(props) => props.theme.text};
+    /* color: var(--text-color); */
   }
 
 

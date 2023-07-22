@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Burguer } from "./styled";
+import { MoonIcon } from "../icons";
 
 export const BaseButton = styled.button``;
 
@@ -17,4 +18,8 @@ export const BurguerButton = (props: BurguerProps) => {
       </div>
     </Burguer>
   );
+};
+
+export const ToggleButton = ({ handleClick }: any) => {
+  return <MoonIcon onClick={handleClick}></MoonIcon>;
 };
