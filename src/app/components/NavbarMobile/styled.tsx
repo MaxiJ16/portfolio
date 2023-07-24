@@ -10,11 +10,6 @@ export const MenuTrigger = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-
-  svg {
-    width: 30px;
-    height: 30px;
-  }
 `;
 
 export const DropdownMenu = styled.div`
@@ -82,14 +77,13 @@ export const DropdownItem = styled.li`
     stroke: var(--first-color-second);
   }
 
-  &:hover a {
-    color: var(--first-color-second);
-    cursor: pointer;
-  }
-
   &:hover svg {
     stroke: var(--first-color-second);
     opacity: 1;
+    cursor: pointer;
+  }
+  &:hover a {
+    color: var(--first-color-second);
     cursor: pointer;
   }
 

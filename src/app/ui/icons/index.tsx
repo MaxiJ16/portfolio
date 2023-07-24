@@ -19,7 +19,15 @@ export const SendPurpleIcon = styled(SendPurpleSvg)``;
 
 // Light - Dark Mode
 import MoonSVG from "./moon.svg";
-export const MoonIcon = styled(MoonSVG)``;
+export const MoonIcon = styled(MoonSVG)`
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: 769px) {
+    width: 24px;
+    height: 24px;
+  }
+`;
 
 // Home Icons
 import LinkedinSvg from "./linkedin.svg";

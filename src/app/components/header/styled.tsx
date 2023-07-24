@@ -34,6 +34,9 @@ export const Navbar = styled.nav`
 
   @media (min-width: 769px) {
     padding: 1.5rem 3.25rem;
+    .toggle {
+      display: none;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -65,9 +68,10 @@ export const NavList = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
-  svg {
-    width: 24px;
-    height: 24px;
-  }
+export const NavItem = styled.li``;
+
+export const ContainerMoon = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 `;

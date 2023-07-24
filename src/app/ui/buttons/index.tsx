@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { Burguer } from "./styled";
-import { MoonIcon } from "../icons";
 
 export const BaseButton = styled.button``;
 
 type BurguerProps = {
   open: boolean;
+  handleClick: () => void;
 };
 
-export const BurguerButton = (props: BurguerProps) => {
+export const BurgerButton = (props: BurguerProps) => {
   return (
-    <Burguer>
+    <Burguer onClick={props.handleClick}>
       <div className={`icon nav-icon-5 ${props.open ? `open` : ``}`}>
         <span></span>
         <span></span>
@@ -18,8 +18,4 @@ export const BurguerButton = (props: BurguerProps) => {
       </div>
     </Burguer>
   );
-};
-
-export const ToggleButton = ({ handleClick }: any) => {
-  return <MoonIcon onClick={handleClick}></MoonIcon>;
 };
