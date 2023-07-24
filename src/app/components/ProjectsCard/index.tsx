@@ -27,7 +27,7 @@ export const Card = ({
   codeUrl,
 }: CardProps) => {
   return (
-    <CardContainer>
+    <CardContainer className="bg">
       <ContainerImg>
         <ImageComponent src={img} alt={`${title}-img`} />
       </ContainerImg>

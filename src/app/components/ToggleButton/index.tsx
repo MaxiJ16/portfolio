@@ -9,7 +9,7 @@ export const ToggleButton = () => {
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyle />
-      <MoonIcon onClick={toggleTheme}></MoonIcon>
+      <MoonIcon onClick={toggleTheme} className={"moon"}></MoonIcon>
     </ThemeProvider>
   );
 };

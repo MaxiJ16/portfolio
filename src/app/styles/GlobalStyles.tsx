@@ -2,12 +2,18 @@ import { createGlobalStyle } from "styled-components";
 
 export const themes = {
   light: {
-    background: "#f1f1f1",
-    text: "#000",
+    background: "var(--body-color)",
+    text: "var(--text-color)",
+    ContainerColor: "var(--body-color)",
+    titleColor: "var(--title-color)",
   },
   dark: {
-    background: "#23292d",
-    text: "#FFF",
+    "--first-color-second": "hsl(var(--hue-color), 30%, 8%)",
+    titleColor: "hsl(var(--hue-color), 8%, 95%)",
+    text: "hsl(var(--hue-color), 8%, 75%)",
+    "--input-color": "hsl(var(--hue-color), 29%, 16%)",
+    background: "hsl(var(--hue-color), 28%, 12%)",
+    ContainerColor: "hsl(var(--hue-color), 29%, 16%)",
   },
 };
 
@@ -31,7 +37,42 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.background};
     transition: all 0.15s linear;
     color: ${(props) => props.theme.text};
-    /* color: var(--text-color); */
+
+    .bg {
+      background-color: ${(props) => props.theme.ContainerColor};
+    }
+
+    label.tag {
+      background-color: ${(props) => props.theme.background};
+    }
+    
+    .moon {
+      stroke: ${(props) => props.theme.titleColor};
+      margin-right: var(--mb-1);
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        stroke: var(--first-color);
+      }
+
+      @media (min-width: 769px) {
+        margin-left: 20px;
+        margin-right: 0;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .scrolled {
+      background-color: ${(props) => props.theme.ContainerColor};
+    }
+
+    h1 {
+      color: ${(props) => props.theme.titleColor};
+    }
+
   }
 
 

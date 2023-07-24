@@ -1,6 +1,5 @@
 import useSWRImmutable from "swr/immutable";
 import { getContenfulContent } from "../lib/api";
-import useSWR from "swr";
 import { useState } from "react";
 
 interface Asset {

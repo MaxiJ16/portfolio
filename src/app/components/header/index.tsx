@@ -69,7 +69,7 @@ export const HeaderComp: React.FC = () => {
         </NavMenu>
 
         <ContainerMoon>
-          <ToggleButton />
+          <ToggleButton/>
 
           {/* Mobile Menu */}
           <NavbarMobile />

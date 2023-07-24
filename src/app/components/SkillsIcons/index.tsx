@@ -35,7 +35,7 @@ import {
 
 export const FrontendIcons = () => {
   return (
-    <SkillsContent className="container grid">
+    <SkillsContent className="container grid bg">
       <LargeText>Frontend Developer</LargeText>
 
       <SkillsBox>
@@ -107,7 +107,7 @@ export const FrontendIcons = () => {
 
 export const BackendIcons = () => {
   return (
-    <SkillsContent className="container grid">
+    <SkillsContent className="container grid bg">
       <LargeText>Backend Developer</LargeText>
 
       <SkillsBox>
@@ -169,7 +169,7 @@ export const BackendIcons = () => {
 
 export const OtherIcons = () => {
   return (
-    <SkillsContent className="container grid">
+    <SkillsContent className="container grid bg">
       <LargeText>Others</LargeText>
 
       <SkillsBox>

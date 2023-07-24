@@ -7,7 +7,6 @@ export const HeaderContainer = styled.header`
   z-index: 100;
 
   .scrolled {
-    background-color: var(--body-color);
     box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
 
     @media (min-width: 769px) {
@@ -73,5 +72,5 @@ export const NavItem = styled.li``;
 export const ContainerMoon = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  
 `;
