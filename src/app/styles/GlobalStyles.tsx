@@ -82,6 +82,10 @@ export const GlobalStyle = createGlobalStyle`
       color: ${(props) => props.theme.text};
     }
 
+    .active {
+      background-color: ${(props) => props.theme.ContainerColor};
+      color: ${(props) => props.theme.text};
+    }
     
   }
 

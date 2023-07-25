@@ -60,10 +60,8 @@ export const DropdownItem = styled.li`
   padding: 5px 0;
   margin: 8px auto;
   font-size: var(--small-font-size);
-  color: var(--title-color);
   font-weight: var(--font-medium);
   border-top: 1px solid #e6e3e3;
-  border-radius: var(--border-radius);
 
   &:hover {
     background-color: var(--first-color-lighter);
