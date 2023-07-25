@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
       width: 30px;
       height: 30px;
 
+      
       &:hover {
         stroke: var(--first-color);
       }
@@ -64,7 +65,11 @@ export const GlobalStyle = createGlobalStyle`
         height: 24px;
       }
     }
-
+    
+    .mouse{
+      stroke: ${(props) => props.theme.text};
+    }
+    
     .scrolled {
       background-color: ${(props) => props.theme.ContainerColor};
     }
@@ -73,6 +78,11 @@ export const GlobalStyle = createGlobalStyle`
       color: ${(props) => props.theme.titleColor};
     }
 
+    h3, p {
+      color: ${(props) => props.theme.text};
+    }
+
+    
   }
 
 

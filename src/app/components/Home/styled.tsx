@@ -154,9 +154,15 @@ export const ScrollButton = styled.button`
   }
 
   p {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: 500;
     margin-right: var(--mb-0-25);
+    margin-left: var(--mb-0-25);
+  }
+
+
+  svg {
+    height: 28px;
+    width: 28px;
   }
 
   @media (min-width: 769px) {
@@ -175,4 +181,5 @@ export const ScrollButton = styled.button`
   @media (min-width: 1500px) {
     margin-left: 19rem;
   }
+
 `;

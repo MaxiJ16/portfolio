@@ -29,7 +29,9 @@ import GithubSvg from "./github.svg";
 export const GithbubIcon = styled(GithubSvg)``;
 
 import MouseSvg from "./computer-mouse.svg";
-export const MouseIcon = styled(MouseSvg)``;
+export const MouseIcon = styled(MouseSvg)`
+  /* stroke: var(--first-color); */
+`;
 
 import ArrowDownSvg from "./arrow-down.svg";
 export const ArrowDownIcon = styled(ArrowDownSvg)``;

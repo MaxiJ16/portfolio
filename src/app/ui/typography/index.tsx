@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  /* color: var(--title-color); */
   font-weight: var(--font-semi-bold);
 
   @media (min-width: 769px) {
@@ -18,7 +18,7 @@ export const SubTitle = styled(Title).attrs({ as: "h2" })`
 export const LargeText = styled(Title).attrs({ as: "h3" })`
   font-size: 1.5rem;
   font-weight: var(--font-medium);
-  color: #575757;
+  /* color: #575757; */
 `;
 
 export const BodyText = styled.p`

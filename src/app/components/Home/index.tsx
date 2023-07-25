@@ -65,7 +65,7 @@ export const HomePage = () => {
 
         <ScrollButton>
           <Link href={"#skills"} data-scroll-to="skills">
-            <MouseIcon />
+            <MouseIcon className={"mouse"}/>
             <BodyText>Scroll down</BodyText>
             <ArrowDownIcon />
           </Link>
