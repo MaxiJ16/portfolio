@@ -2686,6 +2686,11 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-wrap-balancer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-wrap-balancer/-/react-wrap-balancer-1.0.0.tgz#f45f8af7cf68d9d54d16a8cf271047b75d1431d7"
+  integrity sha512-yjDH+I8WGyDfh95gKhX/6ckfSBAltwQkxiYxtLPlyIRQNUVSjvz1uHR6Hpy+zHyOkJQw6GEC5RPglA41QXvzyw==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"

@@ -12,6 +12,45 @@ export const HomeContainer = styled.div`
   @media (min-width: 1200px) {
     row-gap: 3rem;
   }
+
+  .scrollButton {
+    color: var(--first-color);
+    transition: 0.3s;
+    display: none;
+
+    &:hover {
+      transform: translateY(0.25rem);
+    }
+
+    p {
+      font-weight: 500;
+      margin-right: var(--mb-0-25);
+      margin-left: var(--mb-0-25);
+    }
+
+    svg {
+      height: 28px;
+      width: 28px;
+    }
+
+    @media (min-width: 769px) {
+      display: flex;
+      align-items: center;
+      margin-left: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-left: 7rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 15rem;
+    }
+
+    @media (min-width: 1500px) {
+      margin-left: 19rem;
+    }
+  }
 `;
 
 export const HomeContent = styled.div`
@@ -135,51 +174,4 @@ export const HomeData = styled.div`
   @media (min-width: 769px) {
     grid-column: initial;
   }
-`;
-
-export const ScrollButton = styled.button`
-  display: none;
-  border: none;
-  background-color: transparent;
-
-  a {
-    color: var(--first-color);
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-  }
-
-  a:hover {
-    transform: translateY(0.25rem);
-  }
-
-  p {
-    font-weight: 500;
-    margin-right: var(--mb-0-25);
-    margin-left: var(--mb-0-25);
-  }
-
-
-  svg {
-    height: 28px;
-    width: 28px;
-  }
-
-  @media (min-width: 769px) {
-    display: block;
-    margin-left: 3rem;
-  }
-
-  @media (min-width: 1024px) {
-    margin-left: 7rem;
-  }
-
-  @media (min-width: 1200px) {
-    margin-left: 15rem;
-  }
-
-  @media (min-width: 1500px) {
-    margin-left: 19rem;
-  }
-
 `;

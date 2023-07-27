@@ -5,8 +5,8 @@ import { BackendIcons, FrontendIcons, OtherIcons } from "../SkillsIcons";
 export const Skills = () => {
   return (
     <SkillSection id="skills" data-scroll-section>
-      <SectionSubtitle>Mis Tecnologías</SectionSubtitle>
-      <SectionTitle>Habilidades</SectionTitle>
+      <SectionSubtitle>Mis Habilidades</SectionSubtitle>
+      <SectionTitle>Tecnologías</SectionTitle>
 
       <SkillsContainer className="grid">
         <FrontendIcons />

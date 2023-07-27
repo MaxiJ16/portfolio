@@ -51,13 +51,13 @@ export const HeaderComp: React.FC = () => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#skills"} data-scroll-to="skills">
-                <BodyText>Tecnologías</BodyText>
+              <Link href={"#projects"} data-scroll-to="projects">
+                <BodyText>Proyectos</BodyText>
               </Link>
             </NavItem>
             <NavItem>
-              <Link href={"#projects"} data-scroll-to="projects">
-                <BodyText>Proyectos</BodyText>
+              <Link href={"#skills"} data-scroll-to="skills">
+                <BodyText>Tecnologías</BodyText>
               </Link>
             </NavItem>
             <NavItem>
@@ -69,7 +69,7 @@ export const HeaderComp: React.FC = () => {
         </NavMenu>
 
         <ContainerMoon>
-          <ToggleButton/>
+          <ToggleButton />
 
           {/* Mobile Menu */}
           <NavbarMobile />

@@ -19,8 +19,8 @@ export default function Home() {
     <main data-scroll-container>
       <HeaderComp />
       <HomePage />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
       <FooterComp />
     </main>
