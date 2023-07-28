@@ -31,6 +31,14 @@ export const Input = styled.input`
   padding: 1.5rem;
   border-radius: 0.75rem;
   z-index: 1;
+  caret-color: var(--first-color);
+
+  &:focus {
+    color: var(--first-color);
+    font-weight: bold;
+    transition: border-color 0.4s;
+    border: 3px solid var(--first-color);
+  }
 `;
 
 export const Label = styled.label`
@@ -58,6 +66,13 @@ export const Textarea = styled.textarea`
   padding: 1.5rem;
   border-radius: 0.75rem;
   z-index: 1;
+
+  &:focus {
+    color: var(--first-color);
+    font-weight: bold;
+    transition: border-color 0.4s;
+    border: 3px solid var(--first-color);
+  }
 `;
 
 export const Button = styled.button`
