@@ -1,5 +1,5 @@
 import useSWRImmutable from "swr/immutable";
-import { getContenfulContent } from "../lib/api";
+import { getContenfulProjects, getContenfulAboutMe } from "../lib/api";
 import { useState } from "react";
 
 interface Asset {
@@ -22,19 +22,41 @@ interface Item {
         id: string;
       };
     };
-    codeUrl: string;
-    demoUrl: string;
+    codeUrl?: string;
+    demoUrl?: string;
+    linkCv?: string;
+    subtitle?: string;
   };
 }
 
-export const useGetData = () => {
-  const { data, error } = useSWRImmutable("/api", getContenfulContent);
-  //  operador de coalescencia nula (??) para devolver data si está definido, o error si no lo está.
-  return data ?? error;
+export const useGetAboutMe = () => {
+  const { data, error } = useSWRImmutable("/api/me", getContenfulAboutMe);
+  //El método reduce nos permite iterar sobre cada elemento de includes.Asset y acumular un valor en acc.
+  const images: Record<string, string> | undefined = data?.includes.Asset.reduce((acc: Record<string, string>, asset: Asset) => {
+      // acc[asset.sys.id] = asset.fields.file.url;: En cada iteración, estamos asignando la URL del archivo (asset.fields.file.url) al objeto acc utilizando el ID del activo (asset.sys.id) como clave. Esto nos permite crear un objeto que mapea los IDs de los activos a sus respectivas URLs.
+      acc[asset.sys.id] = asset.fields.file.url;
+      return acc;
+    }, {});
+
+  const fieldsCollection: | { title: string; subtitle?: string; description: string; image: string; linkCv?: string; id: string;  }[] | undefined = data?.items.map((item: Item) => {
+    const { title, subtitle, description, linkCv, image: { sys: { id: imageId } } } = item.fields;
+    const imageUrl = images?.[imageId] ?? '';
+
+    return {
+      title,
+      subtitle,
+      description,
+      linkCv,
+      image: "https:" + imageUrl,
+      id: imageId,
+    };
+  });
+
+  return fieldsCollection;
 };
 
 export const useGetProjects = () => {
-  const data = useGetData();
+  const { data, error } = useSWRImmutable("/api/projects", getContenfulProjects);
 
   //El método reduce nos permite iterar sobre cada elemento de includes.Asset y acumular un valor en acc.
   const images: Record<string, string> | undefined =
@@ -70,9 +92,6 @@ export const useGetProjects = () => {
 
   return fieldsCollection;
 };
-
-
-
 
 export const useThemeMode = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");

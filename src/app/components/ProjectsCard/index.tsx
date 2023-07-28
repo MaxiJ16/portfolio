@@ -18,7 +18,6 @@ type CardProps = {
   description: string;
   demoUrl: string;
   codeUrl: string;
-  key: string;
 };
 
 export const Card = ({
@@ -27,7 +26,6 @@ export const Card = ({
   description,
   demoUrl,
   codeUrl,
-  key,
 }: CardProps) => {
   return (
     <CardContainer className="bg">

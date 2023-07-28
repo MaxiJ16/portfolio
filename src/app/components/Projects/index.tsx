@@ -16,8 +16,8 @@ export const Projects = () => {
   const projects: Project[] | undefined = useGetProjects();
   return (
     <ProjectSection id="projects" data-scroll-section>
-      <ContainerTitlesSection>
-        <SectionTitle>Proyectos</SectionTitle>
+      <ContainerTitlesSection >
+        <SectionTitle >Proyectos</SectionTitle>
         <SectionSubtitle>Mi Portfolio</SectionSubtitle>
       </ContainerTitlesSection>
 

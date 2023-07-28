@@ -32,21 +32,21 @@ export const Navbar = styled.nav`
   }
 
   @media (min-width: 769px) {
-    padding: 1.5rem 3.25rem;
+    padding: 1rem 3.25rem;
     .toggle {
       display: none;
     }
   }
 
   @media (min-width: 1024px) {
-    padding: 1.5rem 4.5rem;
+    padding: 1rem 4.5rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 1.5rem 12rem;
+    padding: 1rem 12rem;
   }
   @media (min-width: 1500px) {
-    padding: 1.5rem 16rem;
+    padding: 1rem 16rem;
   }
 `;
 
@@ -65,6 +65,10 @@ export const NavList = styled.ul`
     align-items: center;
     column-gap: 2rem;
   }
+
+  li.activeSec {
+    border-bottom: 3px solid var(--first-color);
+  }
 `;
 
 export const NavItem = styled.li``;
@@ -72,5 +76,4 @@ export const NavItem = styled.li``;
 export const ContainerMoon = styled.div`
   display: flex;
   align-items: center;
-  
 `;
