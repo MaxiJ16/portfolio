@@ -7,6 +7,7 @@ export const SkillsContent = styled.div`
   padding: 1rem .9rem;
   border-radius: 1.25rem;
   box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
+  border: 2px solid var(--first-color);
 
   @media (min-width: 375px) {
     width: auto;
@@ -61,11 +62,12 @@ export const SkillsData = styled.div`
     box-shadow: rgba(105, 17, 17, 0.1) 0px 30px 60px;
     font-weight: bold;
     border-radius: 10px;
-    transform: translateY(0.3rem);
+    transform: translateY(0.5rem);
     transition: 0.2s;
 
     p {
       font-weight: bold;
+      font-size: 16px;
     }
   }
 `;

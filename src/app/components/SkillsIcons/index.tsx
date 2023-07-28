@@ -35,7 +35,7 @@ import {
 
 export const FrontendIcons = () => {
   return (
-    <SkillsContent className="container grid bg">
+    <SkillsContent className="grid bg">
       <LargeText>Frontend Developer</LargeText>
 
       <SkillsBox>

@@ -35,7 +35,7 @@ export const HomeContentData = () => {
       {about?.map((p: AboutMe) => (
         <Fragment key={p.id}>
           <HomeImg>
-            <Image src={p.image} alt={p.title} width="1000" height="1000" />
+            <Image src={p.image} alt={p.title} width="1000" height="1000"/>
           </HomeImg>
 
           <HomeData>
