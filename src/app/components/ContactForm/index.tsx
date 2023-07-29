@@ -9,6 +9,7 @@ import {
   ErrorText,
 } from "./styled";
 import { Loader } from "@/app/ui/loader";
+import { sendEmail } from "@/app/lib/sendgrid";
 
 interface ContactFormValues {
   name: string;
@@ -34,10 +35,13 @@ const contactSchema = yup.object({
 
 export const ContactForm = () => {
   const handleSubmit = (values: ContactFormValues, { setSubmitting }: any) => {
-    setTimeout(() => {
-      console.log(values);
+    setTimeout(async () => {
+      const { name, email, message } = values;
+      console.log({ name, email, message });
+      // const res = await sendEmail(name, email, message);
+
       setSubmitting(false);
-    }, 500);
+    }, 600);
   };
 
   return (
