@@ -1,23 +1,28 @@
-import sgMail from "@sendgrid/mail";
-
-sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY as string);
-
 export async function sendEmail(name: string, email: string, message: string) {
-  const msg = {
-    to: email,
-    from: "maxijofre.c@gmail.com",
-    subject: `Mensaje recibido de ${name}`,
-    text: "Contacto desde tu portfolio",
-    html: `<div>
-            <h1>PORTFOLIO</h1>
-            <p>Estimado/a Maxi, Desde tu portfolio se comunica ${name}, su email es: ${email} y te dejo este mensaje: <strong>${message}</strong>.</p>
-           </div>`,
+  const data = {
+    to: "maxijofre.c@gmail.com",
+    from: email,
+    subject: "Contacto desde tu portfolio",
+    text: `Usuario: ${name}\nMensaje: ${message}`,
   };
 
-  const mailSentRes = await sgMail.send(msg);
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      
+      body: JSON.stringify(data),
+    });
+    
 
-  return {
-    message: "Codigo enviado! Revisa tu casilla de mensajes",
-    res: mailSentRes,
-  };
+    if (response.ok) {
+      return "¡Correo enviado correctamente!";
+    } else {
+      console.error("Error al enviar el correo");
+    }
+  } catch (error) {
+    console.error("Error al realizar la solicitud");
+  }
 }

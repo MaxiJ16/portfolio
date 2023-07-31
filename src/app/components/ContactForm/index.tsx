@@ -37,9 +37,7 @@ export const ContactForm = () => {
   const handleSubmit = (values: ContactFormValues, { setSubmitting }: any) => {
     setTimeout(async () => {
       const { name, email, message } = values;
-      console.log({ name, email, message });
-      // const res = await sendEmail(name, email, message);
-
+      const res = await sendEmail(name, email, message);
       setSubmitting(false);
     }, 600);
   };
