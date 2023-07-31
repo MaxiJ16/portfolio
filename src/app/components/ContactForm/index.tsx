@@ -38,8 +38,9 @@ export const ContactForm = () => {
     setTimeout(async () => {
       const { name, email, message } = values;
       const res = await sendEmail(name, email, message);
+      console.log({ res });
       setSubmitting(false);
-    }, 600);
+    }, 300);
   };
 
   return (

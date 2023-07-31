@@ -10,11 +10,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const msg = {
       to: to,
       from: from,
-      subject: `Mensaje recibido de ${subject}`,
-      text: "Contacto desde tu portfolio",
+      subject: `Portfolio: Mensaje recibido de ${from}`,
+      text: subject,
       html: `<div>
               <h1>PORTFOLIO</h1>
-              <p>Estimado/a Maxi, Desde tu portfolio se comunica ${to}, su email es: ${to} y te dejo este mensaje: <strong>${text}</strong>.</p>
+              <p>Estimado Maxi</p>
+              <br/>
+              Te dejaron este mensaje: <strong>${text}</strong>.</p>
              </div>`,
     };
 
@@ -27,6 +29,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } else {
     res.status(405).json({ error: "Método no permitido" });
   }
-
-  res.status(200).json({ status: "ok" });
 };

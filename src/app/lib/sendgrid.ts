@@ -1,9 +1,9 @@
 export async function sendEmail(name: string, email: string, message: string) {
   const data = {
-    to: "maxijofre.c@gmail.com",
     from: email,
+    to: "maxijofre.c@gmail.com",
     subject: "Contacto desde tu portfolio",
-    text: `Usuario: ${name}\nMensaje: ${message}`,
+    text: `Usuario: ${name},\nEmail: ${name},\nMensaje: ${message}`,
   };
 
   try {
