@@ -4,4 +4,4 @@ Actualmente está en proceso de creación, decídi usar Next.Js, React.Js, TypeS
 <br/>
 Para ver su proceso actual ingresar a la siguiente URL: **https://portfolio-maxij16.vercel.app/**
 <br/>
-Cualquier comentario o feedback es bienvenido!
+Cualquier comentario o feedback es bienvenido, gracias por tu tiempo.
