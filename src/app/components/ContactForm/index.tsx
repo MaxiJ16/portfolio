@@ -41,30 +41,26 @@ export const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleSubmit = (values: ContactFormValues, { setSubmitting, resetForm }: any) => {
-    setTimeout(async () => {
-      try {
-        const { name, email, message } = values;
-        const res = await sendEmail(name, email, message);
-        console.log({ res });
-        if (!res) {
-          setError(true); // Marcar como error si no se envía correctamente
-        } else {
-          setSubmitted(true); // Marcar como enviado si se envía correctamente
-        }
-      } catch (error) {
-        setError(true); // Marcar como error si ocurre una excepción
-        resetForm();
-      } finally {
-        setSubmitting(false);
+  const handleSubmit = async (
+    values: ContactFormValues,
+    { setSubmitting, resetForm }: any
+  ) => {
+    try {
+      const { name, email, message } = values;
+      const emailSent = await sendEmail(name, email, message);
+      if (!emailSent) {
+        setError(true); // Marcar como error si no se envía correctamente
       }
-    }, 100);
-  };
-
-  const handleReset = (resetForm: () => void) => {
-    resetForm(); // Restablecer los valores del formulario a los valores iniciales
-    setSubmitted(false); // Restablecer el estado de envío a falso
-    setError(false); // Restablecer el estado de error a falso
+      setSubmitted(true); // Marcar como enviado si se envía correctamente
+      resetForm();
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 2000);
+    } catch (error) {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -123,10 +119,10 @@ export const ContactForm = () => {
                 Mensaje enviado con éxito!
               </SuccessText>
             )}
-            
+
             {error && (
               <ErrorText>
-                <AlertIcon/>
+                <AlertIcon />
                 Error al enviar el mensaje.
               </ErrorText>
             )}

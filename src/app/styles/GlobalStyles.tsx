@@ -43,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     label.tag {
+      border-radius: 8px;
       background-color: ${(props) => props.theme.background};
     }
     
