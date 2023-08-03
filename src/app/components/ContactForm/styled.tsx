@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const FormContain = styled.div`
   display: flex;
@@ -12,15 +12,62 @@ export const FormContain = styled.div`
     left: 0;
     position: absolute;
   }
+
+  ::placeholder {
+    color: #a7a7a7;
+    font-style: italic;
+  }
 `;
-export const ErrorText = styled.span`
+
+export const ErrorInputText = styled.span`
   margin-top: 63px;
-  color: #e21e1e;
+  color: #ed0c0ceb;
   font-size: 14px;
   padding: 5px 20px;
   border-radius: 8px;
   font-weight: 600;
-  background-color: var(--first-color-lighter);
+  background-color: #9c9b9b2d;
+`;
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+export const ErrorText = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #9c9b9b2d;
+  color: #f80000e4;
+  padding: 10px 5px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: ${fadeIn} 0.3s ease-in-out; // Agrega la animación de transición
+`;
+
+export const SuccessText = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #7e827e1f;
+  color: #27be27;
+  padding: 10px 5px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: ${fadeIn} 0.3s ease-in-out; // Agrega la animación de transición
 `;
 
 export const FormDiv = styled.div`
@@ -89,11 +136,11 @@ export const Label = styled.label`
   top: -0.75rem;
   left: 1.25rem;
   font-size: var(--smaller-font-size);
+  font-weight: 600;
   padding: 0.25rem;
   background-color: var(--body-color);
   z-index: 10;
 `;
-
 
 export const Button = styled.button`
   width: 50%;

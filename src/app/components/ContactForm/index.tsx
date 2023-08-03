@@ -6,10 +6,14 @@ import {
   Label,
   Button,
   FormContain,
+  ErrorInputText,
+  SuccessText,
   ErrorText,
 } from "./styled";
 import { Loader } from "@/app/ui/loader";
 import { sendEmail } from "@/app/lib/sendgrid";
+import { useState } from "react";
+import { CheckIcon, AlertIcon } from "@/app/ui/icons";
 
 interface ContactFormValues {
   name: string;
@@ -34,13 +38,33 @@ const contactSchema = yup.object({
 });
 
 export const ContactForm = () => {
-  const handleSubmit = (values: ContactFormValues, { setSubmitting }: any) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (values: ContactFormValues, { setSubmitting, resetForm }: any) => {
     setTimeout(async () => {
-      const { name, email, message } = values;
-      const res = await sendEmail(name, email, message);
-      console.log({ res });
-      setSubmitting(false);
-    }, 300);
+      try {
+        const { name, email, message } = values;
+        const res = await sendEmail(name, email, message);
+        console.log({ res });
+        if (!res) {
+          setError(true); // Marcar como error si no se envía correctamente
+        } else {
+          setSubmitted(true); // Marcar como enviado si se envía correctamente
+        }
+      } catch (error) {
+        setError(true); // Marcar como error si ocurre una excepción
+        resetForm();
+      } finally {
+        setSubmitting(false);
+      }
+    }, 100);
+  };
+
+  const handleReset = (resetForm: () => void) => {
+    resetForm(); // Restablecer los valores del formulario a los valores iniciales
+    setSubmitted(false); // Restablecer el estado de envío a falso
+    setError(false); // Restablecer el estado de error a falso
   };
 
   return (
@@ -56,22 +80,22 @@ export const ContactForm = () => {
               <Label className="tag">Nombre</Label>
               <Field
                 name="name"
-                placeholder="Ingresa tu nombre"
+                placeholder="Juán Perez"
                 type="text"
                 onBlur={() => setFieldTouched("name", true)}
               />
-              <ErrorMessage name="name" component={ErrorText} />
+              <ErrorMessage name="name" component={ErrorInputText} />
             </FormDiv>
 
             <FormDiv>
               <Label className="tag">Email</Label>
               <Field
                 name="email"
-                placeholder="Ingresa tu email"
+                placeholder="juanperez@gmail.com"
                 type="email"
                 onBlur={() => setFieldTouched("email", true)}
               />
-              <ErrorMessage name="email" component={ErrorText} />
+              <ErrorMessage name="email" component={ErrorInputText} />
             </FormDiv>
 
             <FormTextareaContainer>
@@ -79,12 +103,12 @@ export const ContactForm = () => {
               <Field
                 as="textarea"
                 name="message"
-                placeholder="Escribe tu mensaje"
+                placeholder="Hola, me comunico desde tu portfolio..."
                 onBlur={() => setFieldTouched("message", true)}
               />
               <ErrorMessage
                 name="message"
-                component={ErrorText}
+                component={ErrorInputText}
                 className="errorText"
               />
             </FormTextareaContainer>
@@ -92,6 +116,20 @@ export const ContactForm = () => {
             <Button type="submit" disabled={isSubmitting}>
               {isSubmitting ? <Loader /> : "Enviar"}
             </Button>
+
+            {submitted && !error && (
+              <SuccessText>
+                <CheckIcon />
+                Mensaje enviado con éxito!
+              </SuccessText>
+            )}
+            
+            {error && (
+              <ErrorText>
+                <AlertIcon/>
+                Error al enviar el mensaje.
+              </ErrorText>
+            )}
           </FormContain>
         </Form>
       )}

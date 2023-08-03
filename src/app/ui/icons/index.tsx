@@ -21,6 +21,12 @@ export const SendPurpleIcon = styled(SendPurpleSvg)``;
 import MoonSVG from "./moon.svg";
 export const MoonIcon = styled(MoonSVG)``;
 
+import CheckSVG from "./check-circle.svg";
+export const CheckIcon = styled(CheckSVG)``;
+
+import AlertSVG from "./alert-circle.svg";
+export const AlertIcon = styled(AlertSVG)``;
+
 // Home Icons
 import LinkedinSvg from "./linkedin.svg";
 export const LinkedinIcon = styled(LinkedinSvg)``;
@@ -38,6 +44,7 @@ export const ArrowDownIcon = styled(ArrowDownSvg)``;
 
 import DownloadSvg from "./download.svg";
 export const DownLoadIcon = styled(DownloadSvg)``;
+
 
 ///// SKILLS ICONS //////
 
