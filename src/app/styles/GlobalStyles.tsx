@@ -8,12 +8,10 @@ export const themes = {
     titleColor: "var(--title-color)",
   },
   dark: {
-    "--first-color-second": "hsl(var(--hue-color), 30%, 8%)",
-    titleColor: "hsl(var(--hue-color), 8%, 95%)",
-    text: "hsl(var(--hue-color), 8%, 75%)",
-    "--input-color": "hsl(var(--hue-color), 29%, 16%)",
     background: "hsl(var(--hue-color), 28%, 12%)",
+    text: "hsl(var(--hue-color), 8%, 75%)",
     ContainerColor: "hsl(var(--hue-color), 29%, 16%)",
+    titleColor: "hsl(var(--hue-color), 8%, 95%)",
   },
 };
 
@@ -174,7 +172,13 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Reusable css clases */
   section {
-    padding: 100px 0;
+    padding: 60px 0 100px;
+  }
+
+  @media(min-width: 769px){
+    section {
+      padding: 100px 0 120px;
+    }
   }
 
   /* Layout */

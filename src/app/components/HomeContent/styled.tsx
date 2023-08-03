@@ -38,14 +38,15 @@ export const HomeImg = styled.div`
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 6px solid var(--first-color);
+    border: 4px solid var(--first-color);
+    box-shadow: 0 0 5px 0 var(--first-color);
     object-fit: cover;
   }
 
   @media (min-width: 769px) {
     img {
-      width: 270px;
-      height: 270px;
+      width: 280px;
+      height: 280px;
     }
   }
 `;
@@ -55,7 +56,7 @@ export const HomeData = styled.div`
 
   h3 {
     font-size: var(--h3-font-size);
-    color: var(--text-color);
+    color: var(--first-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
   }

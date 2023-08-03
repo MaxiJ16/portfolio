@@ -93,7 +93,6 @@ export const FormDiv = styled.div`
     caret-color: var(--first-color);
 
     &:focus {
-      color: var(--first-color);
       font-weight: bold;
       transition: border-color 0.4s;
       border: 3px solid var(--first-color);
@@ -136,8 +135,8 @@ export const Label = styled.label`
   top: -0.75rem;
   left: 1.25rem;
   font-size: var(--smaller-font-size);
-  font-weight: 600;
   padding: 0.25rem;
+  color: var(--first-color);
   background-color: var(--body-color);
   z-index: 10;
 `;

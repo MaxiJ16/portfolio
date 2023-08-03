@@ -22,7 +22,11 @@ export const FooterList = styled.ul`
   margin-bottom: 2rem;
 `;
 
-export const FooterLi = styled.li``;
+export const FooterLi = styled.li`
+  a:hover{
+    color: #c0bebe;
+  }
+`;
 export const FooterSocial = styled.ul`
   display: flex;
   justify-content: center;
@@ -35,6 +39,11 @@ export const FooterSocial = styled.ul`
     border-radius: 0.25rem;
     font-size: 1rem;
     display: inline-flex;
+  }
+
+  a:hover{
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
   }
 `;
 
