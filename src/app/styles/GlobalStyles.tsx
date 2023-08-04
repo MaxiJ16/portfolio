@@ -57,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
         stroke: var(--first-color);
       }
 
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         margin-left: 20px;
         margin-right: 0;
         width: 24px;
@@ -175,7 +175,13 @@ export const GlobalStyle = createGlobalStyle`
     padding: 60px 0 100px;
   }
 
-  @media(min-width: 769px){
+  @media(min-width: 768px){
+    section {
+      padding: 100px 0 120px;
+    }
+  }
+
+  @media(min-width: 1024px){
     section {
       padding: 100px 0 120px;
     }
@@ -183,7 +189,7 @@ export const GlobalStyle = createGlobalStyle`
 
   section.visible {
     opacity: 1;
-    transition: opacity 3s ease;
+    transition: opacity 1s ease-in-out;
   }
 
   /* Layout */
@@ -193,7 +199,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
   @media (min-width: 350px) {
@@ -202,7 +208,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .container {
       margin-left: auto;
       margin-right: auto;

@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const HomeSection = styled.section``;
+export const HomeSection = styled.section`
+  height: 100vh;
+`;
 
 export const HomeContainer = styled.div`
   gap: 3rem;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     row-gap: 5rem;
   }
 
@@ -33,7 +35,7 @@ export const HomeContainer = styled.div`
       width: 28px;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       display: flex;
       align-items: center;
       margin-left: 3rem;
@@ -62,7 +64,7 @@ export const HomeContent = styled.div`
     grid-template-columns: max-content 1fr 1fr;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     padding-top: 3.5rem;
     column-gap: 2rem;
   }

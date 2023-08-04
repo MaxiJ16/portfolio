@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   .scrolled {
     box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       border-radius: 1rem;
     }
   }
@@ -31,8 +31,8 @@ export const Navbar = styled.nav`
     border-radius: 30px;
   }
 
-  @media (min-width: 769px) {
-    padding: 1rem 3.25rem;
+  @media (min-width: 768px) {
+    padding: 1rem 4.25rem;
     .toggle {
       display: none;
     }
@@ -51,7 +51,7 @@ export const Navbar = styled.nav`
 `;
 
 export const NavMenu = styled.div`
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     margin-left: auto;
   }
 `;
@@ -59,7 +59,7 @@ export const NavMenu = styled.div`
 export const NavList = styled.ul`
   display: none;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -6,7 +6,7 @@ export const Burguer = styled.button`
   border: none;
   background-color: transparent;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 

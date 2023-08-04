@@ -23,7 +23,7 @@ export const CardContainer = styled.div`
     box-sizing: border-box;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     width: 420px;
     height: auto;
     gap: 0px;
@@ -96,7 +96,7 @@ export const ContainerImg = styled.div`
     box-shadow: rgba(57, 57, 57, 0.1) 0px 30px 60px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     img {
       height: 300px;
     }
@@ -109,7 +109,7 @@ export const ContainerButtons = styled.div`
   justify-content: space-around;
   gap: 5px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     height: 70px;
   }
 

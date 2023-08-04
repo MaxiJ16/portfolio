@@ -6,7 +6,7 @@ export const Title = styled.h1`
   /* color: var(--title-color); */
   font-weight: var(--font-semi-bold);
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: var(--big-font-size);
   }
 `;

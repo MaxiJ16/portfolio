@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MenuContainer = styled.div`
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;

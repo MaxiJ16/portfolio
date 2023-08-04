@@ -24,7 +24,7 @@ export const HomeImg = styled.div`
     justify-self: center;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     width: 270px;
     height: 270px;
   }
@@ -43,10 +43,17 @@ export const HomeImg = styled.div`
     object-fit: cover;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     img {
-      width: 280px;
-      height: 280px;
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    img {
+      width: 300px;
+      height: 300px;
     }
   }
 `;
@@ -92,7 +99,7 @@ export const HomeData = styled.div`
     grid-column: initial;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     grid-column: initial;
   }
 `;
