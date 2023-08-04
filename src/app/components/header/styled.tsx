@@ -69,6 +69,10 @@ export const NavList = styled.ul`
   li.activeSec {
     border-bottom: 3px solid var(--first-color);
   }
+
+  .activeSec {
+    opacity: 1;
+  }
 `;
 
 export const NavItem = styled.li``;

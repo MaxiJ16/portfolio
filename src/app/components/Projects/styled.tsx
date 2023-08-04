@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ProjectSection = styled.section`
   width: 100%;
+  opacity: 0;
 `;
 
 export const ContainerTitlesSection = styled.div`
@@ -17,10 +18,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
-
-  @media (min-width: 769px) {
-    padding: 3rem 0.5rem;
-  }
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, max-content);

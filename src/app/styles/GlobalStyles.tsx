@@ -181,6 +181,11 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  section.visible {
+    opacity: 1;
+    transition: opacity 3s ease;
+  }
+
   /* Layout */
   .grid {
     display: grid;

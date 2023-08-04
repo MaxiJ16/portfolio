@@ -99,7 +99,7 @@ export const ContactForm = () => {
               <Field
                 as="textarea"
                 name="message"
-                placeholder="Hola, me comunico desde tu portfolio..."
+                placeholder="Hola Maxi, me gustó tu trabajo..."
                 onBlur={() => setFieldTouched("message", true)}
               />
               <ErrorMessage
