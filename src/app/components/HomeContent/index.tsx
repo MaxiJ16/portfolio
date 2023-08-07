@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Fragment } from "react";
 import { useGetAboutMe } from "@/app/hooks";
 import { DownLoadIcon, GithbubIcon, LinkedinIcon } from "@/app/ui/icons";
 import { BodyText, LargeText, Title } from "@/app/ui/typography";
 import { HomeSocial, HomeData, HomeImg } from "./styled";
-import { Fragment } from "react";
 
 interface AboutMe {
   title: string;

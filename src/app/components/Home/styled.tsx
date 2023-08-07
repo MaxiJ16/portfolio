@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const HomeSection = styled.section`
-  height: 100vh;
-`;
+export const HomeSection = styled.section``;
 
 export const HomeContainer = styled.div`
   gap: 3rem;

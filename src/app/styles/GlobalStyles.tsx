@@ -123,7 +123,6 @@ export const GlobalStyle = createGlobalStyle`
     --container-color: #FFF;
 
     /* Font y Typography */
-
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -137,7 +136,6 @@ export const GlobalStyle = createGlobalStyle`
     --font-semi-bold: 600;
 
     /* Margin Bottom */
-
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -148,7 +146,6 @@ export const GlobalStyle = createGlobalStyle`
     --mb-3: 3rem;
 
     /* z index */
-
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
@@ -172,12 +169,12 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Reusable css clases */
   section {
-    padding: 60px 0 100px;
+    padding: 50px 0 100px;
   }
 
   @media(min-width: 768px){
     section {
-      padding: 100px 0 120px;
+      padding: 60px 0 120px;
     }
   }
 

@@ -22,16 +22,19 @@ export const HomeImg = styled.div`
   @media (min-width: 568px) {
     order: 1;
     justify-self: center;
+    margin-bottom: 80px;
   }
 
   @media (min-width: 768px) {
     width: 270px;
     height: 270px;
+    
   }
 
   @media (min-width: 1024px) {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 0px;
   }
 
   img {
@@ -52,8 +55,8 @@ export const HomeImg = styled.div`
 
   @media (min-width: 1024px) {
     img {
-      width: 300px;
-      height: 300px;
+      width: 100%;
+      height: 100%;
     }
   }
 `;

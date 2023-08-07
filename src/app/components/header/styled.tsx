@@ -16,7 +16,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Navbar = styled.nav`
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@ export const Navbar = styled.nav`
     color: var(--first-color);
   }
 
-  @media (min-width: 350px) {
+  @media (min-width: 375px) {
     padding: 0.6rem 2rem;
     border-radius: 30px;
   }
