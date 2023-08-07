@@ -19,6 +19,9 @@ export const HomeSocial = styled.div`
 `;
 
 export const HomeImg = styled.div`
+  width: 200px;
+  height: 200px;
+
   @media (min-width: 568px) {
     order: 1;
     justify-self: center;
@@ -26,38 +29,31 @@ export const HomeImg = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 270px;
-    height: 270px;
-    
+    width: 250px;
+    height: 250px;
   }
 
   @media (min-width: 1024px) {
     width: 280px;
     height: 280px;
+  }
+
+  @media (min-width: 1200px) {
     margin-bottom: 0px;
   }
 
+  @media (min-width: 2000px) {
+    width: 300px;
+    height: 300px;
+  }
+
   img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     border: 4px solid var(--first-color);
     box-shadow: 0 0 5px 0 var(--first-color);
     object-fit: cover;
-  }
-
-  @media (min-width: 768px) {
-    img {
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 `;
 
@@ -99,10 +95,6 @@ export const HomeData = styled.div`
   }
 
   @media (min-width: 568px) {
-    grid-column: initial;
-  }
-
-  @media (min-width: 768px) {
     grid-column: initial;
   }
 `;

@@ -174,13 +174,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media(min-width: 768px){
     section {
-      padding: 60px 0 120px;
-    }
-  }
-
-  @media(min-width: 1024px){
-    section {
-      padding: 100px 0 120px;
+      padding: 80px 0 120px;
     }
   }
 

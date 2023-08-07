@@ -45,8 +45,14 @@ export const Navbar = styled.nav`
   @media (min-width: 1200px) {
     padding: 1rem 12rem;
   }
-  @media (min-width: 1500px) {
+
+  @media (min-width: 1600px) {
     padding: 1rem 16rem;
+  }
+
+  @media (min-width: 2000px) {
+    padding: 1rem 26rem;
+    padding-right: 32rem;
   }
 `;
 
