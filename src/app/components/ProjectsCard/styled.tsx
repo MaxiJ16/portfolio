@@ -13,6 +13,12 @@ export const CardContainer = styled.div`
   gap: 10px;
   margin: 0 auto;
 
+  @supports not (text-wrap: balance) {
+  p {
+    white-space: pre-wrap;
+  }
+}
+
   &:hover {
     box-shadow: var(--first-color) 0px 5px 20px;
   }

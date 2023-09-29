@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Title = styled.h1`
   font-size: var(--h1-font-size);
   /* color: var(--title-color); */
@@ -24,6 +23,13 @@ export const LargeText = styled(Title).attrs({ as: "h3" })`
 
 export const BodyText = styled.p`
   font-size: var(--normal-font-size);
+  text-wrap: balance;
+
+  @supports not (text-wrap: balance) {
+    p {
+      white-space: none;
+    }
+  }
 `;
 
 export const TinyText = styled.span`
