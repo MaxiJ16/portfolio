@@ -1,6 +1,7 @@
 # Mi Portfolio Web 💼
-
 ¡Hola! Soy Maximiliano Jofré, y este es mi portfolio en constante evolución, donde muestro mis proyectos y habilidades en el desarrollo web.
+
+![image](https://github.com/MaxiJ16/portfolio/assets/66652144/e6a58810-d061-4ffe-83a5-706d848d9ddc)
 
 ## Tecnologías Utilizadas 🚀
 
