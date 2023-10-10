@@ -17,9 +17,9 @@ Este portfolio fue creado utilizando una variedad de tecnologías, incluyendo:
 
 ## Visita mi Portfolio 🌐
 
-**Visita mi portfolio en:** [https://portfolio-maxij16.vercel.app/](https://portfolio-maxij16.vercel.app/)
+**Link:** [https://portfolio-maxij16.vercel.app/](https://portfolio-maxij16.vercel.app/)
 
-## Tu Retroalimentación es Valiosa 📣
+## Retroalimentación 📣
 
 Estoy siempre en busca de mejorar mi trabajo. Si tienes sugerencias o comentarios sobre alguno de mis proyectos, la navegación de mi sitio web, o cualquier otro aspecto, por favor compártelo.  😊
 
