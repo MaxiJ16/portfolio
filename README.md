@@ -10,7 +10,7 @@ Este portfolio fue creado utilizando una variedad de tecnologías, incluyendo:
 - **Next.js**: Para construir la aplicación de forma eficiente y optimizada.
 - **React.js**: Para crear componentes interactivos y dinámicos.
 - **TypeScript**: Para una mejor tipificación y mantenimiento del código.
-- **Cloudinary**: Para la gestión de imágenes y recursos multimedia.
+- **Contentful**: Para la gestión de imágenes y recursos.
 - **Styled-Components**: Para estilos con CSS en componentes.
 - **SendGrid**: Para el envío de correos electrónicos y notificaciones.
 - **Yup**: Para la validación de formularios de manera sencilla y eficaz.
